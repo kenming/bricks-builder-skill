@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/builder/features/remote-templates
 pageType: "article"
 section: "builder"
 category: "features"
-lastmod: "2026-08-20T13:12:40.000Z"
+lastmod: "2026-09-16T10:41:20.000Z"
 ---
 Remote Templates let you browse and insert templates from another Bricks installation without exporting and importing files manually.
 

@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/builder/styling/global-class-mana
 pageType: "article"
 section: "builder"
 category: "styling"
-lastmod: "2026-08-20T13:12:40.000Z"
+lastmod: "2026-09-16T10:41:20.000Z"
 ---
 The Global Class Manager is the central place to maintain your reusable CSS classes in Bricks. It is different from the class selector on an element: the element panel is for assigning and editing classes while you work on a specific element; the Class Manager is for editing custom CSS, organizing, importing, exporting, locking, deleting, and reviewing the whole class library.
 

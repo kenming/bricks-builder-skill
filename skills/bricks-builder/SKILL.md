@@ -28,9 +28,12 @@ For building or modifying Bricks content or code:
 
 1. Read only the task-relevant development reference below.
 2. Search the Academy corpus for the related public contract.
-3. Detect the active Bricks version before relying on internal keys, signatures, paths, or storage shapes.
-4. Inspect the smallest relevant part of the authorized active theme or live WordPress state when available.
-5. Implement outside the parent theme and validate in both the builder and frontend.
+3. When an authorized Bricks 2.4+ Abilities connection is available, use its
+   runtime discovery, schema, preview, and apply workflows before direct
+   storage mutation.
+4. Detect the active Bricks version before relying on internal keys, signatures, paths, or storage shapes.
+5. Inspect the smallest relevant part of the authorized active theme or live WordPress state when available.
+6. Implement outside the parent theme and validate in both the builder and frontend.
 
 ### Version-sensitive verification
 
@@ -52,6 +55,7 @@ Read `references/source-policy.md` and `references/version-verification.md` befo
 - Responsive settings, Theme Styles, globals, and components: `references/development/responsive-and-styles.md`
 - Dynamic Data and hook implementation: `references/development/dynamic-data-and-hooks.md`
 - Query Loop and Forms: `references/development/query-and-forms.md`
+- Bricks 2.4+ AI Abilities and MCP workflows: `references/development/ai-abilities.md`
 - Mutation safety and end-to-end validation: `references/development/validation-and-safety.md`
 
 Do not load every development reference by default.

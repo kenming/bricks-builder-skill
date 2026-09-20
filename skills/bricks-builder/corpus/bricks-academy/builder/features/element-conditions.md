@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/builder/features/element-conditio
 pageType: "article"
 section: "builder"
 category: "features"
-lastmod: "2026-08-20T13:12:40.000Z"
+lastmod: "2026-09-16T10:41:20.000Z"
 ---
 Element Conditions let you define one or multiple conditions for any element. Only if those conditions are met is the element rendered on the front end.
 
@@ -140,6 +140,10 @@ Use these conditions inside WooCommerce v2 checkout, pay, thank-you, order recei
 For a Checkout v2 layout, apply **Checkout : Needs shipping** to the Shipping options wrapper. In a multistep layout, apply the same condition to both the Shipping step and its matching navigation item. Apply **Checkout : Needs shipping address** only to the **Ship to another address** control and shipping-address fields.
 
 See [WooCommerce v2 query loops and dynamic tags](/integrations/woocommerce/woocommerce-v2-query-loops-dynamic-tags/#conditions) for the related WooCommerce v2 data reference.
+
+### Order withdrawal screen
+
+With advanced modular elements and WooCommerce Order Withdrawal enabled, use **Order withdrawal screen** inside the [Account Page v2 withdrawal state](/builder/elements/woocommerce/account-page-v2/#order-withdrawal). Compare with **Your details**, **Review**, or **Confirmation** using **is** or **is not**. The generated structure includes these conditions. They control frontend output; all three sections remain visible in the builder.
 
 ## Element Conditions API {#api}
 

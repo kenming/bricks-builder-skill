@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/builder/elements/media/file.md"
 pageType: "article"
 section: "builder"
 category: "elements"
-lastmod: "2026-08-20T13:12:40.000Z"
+lastmod: "2026-09-16T10:41:20.000Z"
 ---
 The File element displays a document as a linked file name, a download button, or both. PDF files can also appear in a browser-native inline preview.
 

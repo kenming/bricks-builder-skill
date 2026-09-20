@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/getting-started/header-template.m
 pageType: "article"
 section: "getting-started"
 category: "header-template"
-lastmod: "2026-08-20T13:12:40.000Z"
+lastmod: "2026-09-16T10:41:20.000Z"
 ---
 https://youtu.be/CL-viLFWjDg
 

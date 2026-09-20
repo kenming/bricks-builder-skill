@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/builder/interface/builder-access.
 pageType: "article"
 section: "builder"
 category: "interface"
-lastmod: "2026-08-20T13:12:40.000Z"
+lastmod: "2026-09-16T10:41:20.000Z"
 ---
 Bricks gives you full control over who can access the builder, and what actions they're allowed to perform. You can either assign a **predefined capability**, or create your own **custom capability** that allows only the specific permissions you enable for it.
 

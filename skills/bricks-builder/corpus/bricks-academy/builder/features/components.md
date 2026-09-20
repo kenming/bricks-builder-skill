@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/builder/features/components.md"
 pageType: "article"
 section: "builder"
 category: "features"
-lastmod: "2026-08-20T13:12:40.000Z"
+lastmod: "2026-09-16T10:41:20.000Z"
 ---
 Components let you create reusable elements. Each instance can be customized through properties.
 

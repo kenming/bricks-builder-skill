@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/integrations/woocommerce/woocomme
 pageType: "article"
 section: "integrations"
 category: "woocommerce"
-lastmod: "2026-08-20T13:12:40.000Z"
+lastmod: "2026-09-16T10:41:20.000Z"
 ---
 Bricks 1.9 introduces the My Account builder, which lets you customize the account area of your WooCommerce site.
 
@@ -41,6 +41,7 @@ Account Page v2 includes states for:
 - Lost password
 - Lost password confirmation
 - Reset password
+- Order withdrawal (WooCommerce 11.1 or later, with Order Withdrawal enabled)
 
 Each state can generate a complete starter block through **Insert a structure**. Address and account forms use editable Bricks form field elements, so you can style and reorder them after generation.
 
@@ -75,6 +76,8 @@ Custom My Account page using the "Account - Page" element
 :::note
 **IMPORTANT:** If you have the *"Enable Bricks WooCommerce "Notice" element"* Bricks setting enabled, please make sure that you have added the "Notice" element to your account page or to all account templates individually. So the notifications when submitting the account forms (e.g., address, reset password, etc.) are displayed.
 :::
+
+Starting in Bricks 2.4, the classic **Account - Page** element supports WooCommerce's native Order Withdrawal flow for guests and logged-in customers when the WooCommerce feature is enabled; use the [Account Page v2 Order withdrawal state](/builder/elements/woocommerce/account-page-v2/#order-withdrawal) to customize its layout.
 
 ## Account - Login / Register {#my-account-login-register}
 

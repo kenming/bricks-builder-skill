@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/developer/schema/elements/section
 pageType: "article"
 section: "developer"
 category: "schema"
-lastmod: "2026-08-20T13:12:40.000Z"
+lastmod: "2026-09-16T10:41:20.000Z"
 ---
 import SchemaJson from '../../../../../components/SchemaJson.astro'
 
@@ -37,7 +37,9 @@ Shared CSS controls available on all elements. Keys are prefixed with `_` and su
 | `_gridItemRowSpan` | text | Grid row | `grid-row` |
 | `_gridItemJustifySelf` | align-items | Justify self | `justify-self` |
 | `_display` | select | Display | `display`, `align-items` |
-| `_gridGap` | number | Gap | `grid-gap` |
+| `_gridGap` | number | Gap | `gap` |
+| `_columnGap` | number | Column gap | `column-gap` |
+| `_rowGap` | number | Row gap | `row-gap` |
 | `_gridTemplateColumns` | text | Grid template columns | `grid-template-columns` |
 | `_gridTemplateRows` | text | Grid template rows | `grid-template-rows` |
 | `_gridAutoColumns` | text | Grid auto columns | `grid-auto-columns` |
@@ -52,12 +54,10 @@ Shared CSS controls available on all elements. Keys are prefixed with `_` and su
 | `_alignSelf` | align-items | Align self | `align-self` |
 | `_justifyContent` | justify-content | Align main axis | `justify-content` |
 | `_alignItems` | align-items | Align cross axis | `align-items` |
-| `_columnGap` | number | Column gap | `column-gap` |
-| `_rowGap` | number | Row gap | `row-gap` |
 | `_flexGrow` | number | Flex grow | `flex-grow` |
 | `_flexShrink` | number | Flex shrink | `flex-shrink` |
 | `_flexBasis` | text | Flex basis | `flex-basis` |
-| `_order` | number | Order | `order` |
+| `_order` | number | _order | `order` |
 | `_content` | text | Content | `content` |
 | `_margin` | spacing | Margin | `margin` |
 | `_padding` | spacing | Padding | `padding` |
@@ -69,7 +69,7 @@ Shared CSS controls available on all elements. Keys are prefixed with `_` and su
 | `_heightMax` | number | Max. height | `max-height` |
 | `_aspectRatio` | text | Aspect ratio | `aspect-ratio` |
 | `_position` | select | Position | `position` |
-| `_top` | number | Top | `top` |
+| `_top` | number | _top | `top` |
 | `_right` | number | Right | `right` |
 | `_bottom` | number | Bottom | `bottom` |
 | `_left` | number | Left | `left` |

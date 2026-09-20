@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/developer/schema/elements/product
 pageType: "article"
 section: "developer"
 category: "schema"
-lastmod: "2026-08-20T13:12:40.000Z"
+lastmod: "2026-09-16T10:41:20.000Z"
 ---
 import SchemaJson from '../../../../../components/SchemaJson.astro'
 
@@ -30,7 +30,9 @@ import SchemaJson from '../../../../../components/SchemaJson.astro'
 | `columns` | number | Columns | `grid-template-columns` on `.products` |
 | `gap` | number | Gap | `gap` on `.products` |
 | `orderby` | select | Order by | — |
-| `order` | select | Order | — |
+| `order` | select | order | — |
+| `buttonMargin` | spacing | Margin | `margin` on `.button` |
+| `buttonAlign` | align-items | Align | `align-self` on `.button` |
 | `buttonPadding` | spacing | Padding | `padding` on `.button` |
 | `buttonBackgroundColor` | color | Background color | `background-color` on `.button` |
 | `buttonBorder` | border | Border | `border` on `.button` |
@@ -53,12 +55,12 @@ Shared CSS controls available on all elements. Keys are prefixed with `_` and su
 | `_heightMax` | number | Max. height | `max-height` |
 | `_aspectRatio` | text | Aspect ratio | `aspect-ratio` |
 | `_position` | select | Position | `position` |
-| `_top` | number | Top | `top` |
+| `_top` | number | _top | `top` |
 | `_right` | number | Right | `right` |
 | `_bottom` | number | Bottom | `bottom` |
 | `_left` | number | Left | `left` |
 | `_zIndex` | number | Z-index | `z-index` |
-| `_order` | number | Order | `order` |
+| `_order` | number | _order | `order` |
 | `_display` | select | Display | `display`, `align-items` |
 | `_visibility` | select | Visibility | `visibility` |
 | `_overflow` | text | Overflow | `overflow` |

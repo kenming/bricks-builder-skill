@@ -37,12 +37,13 @@ Academy corpus 與 index 是同步生成物。Development references 則刻意�
 - 在 child theme 或 plugin 中安全開發 custom elements。
 - 處理 responsive settings、Theme Styles、global classes、variables 與 components。
 - 為 Dynamic Data、Query Loop、Forms 與 hooks 選擇正確的官方及實際版本來源。
+- 在具有獲授權連線時，透過權限感知的 discovery、preview、apply 與驗證流程使用 Bricks 2.4+ AI Abilities。
 - 在 Builder 與 frontend 驗證變更。
 
 ## 目前 Academy 快照
 
-- `768` 篇同步文件
-- `631` 張本地圖片
+- `824` 篇同步文件
+- `632` 張本地圖片
 - `51` 個外部 embed 以連結保留
 
 以上數字會隨官方文件更新而變動。

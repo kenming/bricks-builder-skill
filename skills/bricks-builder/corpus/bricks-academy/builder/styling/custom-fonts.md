@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/builder/styling/custom-fonts.md"
 pageType: "article"
 section: "builder"
 category: "styling"
-lastmod: "2026-08-20T13:12:40.000Z"
+lastmod: "2026-09-16T10:41:20.000Z"
 ---
 Your website typography has a huge impact on how your site is perceived, and it'll pay off to spend some time to get this aspect right.
 
@@ -45,6 +45,10 @@ You can see in the example above that we've uploaded a .WOFF and .WOFF2 font fil
 If we'd have font files for font-weight 700 (bold) and font-style "Italic" we'd click the "Add a font variant" button. Select the font-weight value "700" and the font-style "Italic", and then upload the correct font files for this variant.
 
 Once you've created all relevant font variants and uploaded all font files accordingly, you can save your fonts. Your new custom font is now available in the builder.
+
+Uploading a custom font only makes it available in Bricks typography controls. To use it on the frontend, select the font in a typography setting, such as an element, global class, Theme Style, page setting, or template setting.
+
+When a custom font has multiple weights or styles, select the matching font family and weight/style together in the same typography control. This lets Bricks match the setting to the correct saved variation, especially when **Preload custom fonts** is enabled.
 
 You can also see a font preview when editing your font or on the "Custom Fonts" page.
 

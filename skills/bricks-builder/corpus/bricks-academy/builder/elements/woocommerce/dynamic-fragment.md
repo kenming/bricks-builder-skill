@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/builder/elements/woocommerce/dyna
 pageType: "article"
 section: "builder"
 category: "elements"
-lastmod: "2026-08-20T13:12:40.000Z"
+lastmod: "2026-09-16T10:41:20.000Z"
 ---
 Re-renders WooCommerce cart-dependent content after cart changes.
 
@@ -63,6 +63,8 @@ document.body.addEventListener('bricks/woocommerce/fragments/refreshed', (event)
   console.log(event.detail.fragments)
 })
 ```
+
+This refresh event also covers initial synchronization and checkout recalculations that do not change cart items. For a custom success notice or popup, use the [Bricks cart contents changed](/builder/features/interactions/#cart-contents-changed) interaction trigger, available since Bricks 2.4. It runs after a confirmed AJAX addition, removal, or quantity change and the related UI updates finish.
 
 ## Limitations
 

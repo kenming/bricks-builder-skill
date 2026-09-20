@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/integrations/woocommerce/woocomme
 pageType: "article"
 section: "integrations"
 category: "woocommerce"
-lastmod: "2026-08-20T13:12:40.000Z"
+lastmod: "2026-09-16T10:41:20.000Z"
 ---
 Bricks 2.4 adds WooCommerce-specific query loops and dynamic tags for advanced modular Cart, Checkout, and My Account layouts.
 
@@ -132,6 +132,7 @@ Use `{woo_url}` to output common WooCommerce page and endpoint URLs. Without a k
 | `{woo_url:payment-methods}`                       | My Account payment methods endpoint URL    |
 | `{woo_url:add-payment-method}`                    | My Account add payment method endpoint URL |
 | `{woo_url:lost-password}`                         | My Account lost password endpoint URL      |
+| `{woo_url:order-withdrawal}`                       | Order Withdrawal endpoint URL, when enabled |
 | `{woo_url:customer-logout}`                       | My Account logout endpoint URL             |
 | `{woo_url:terms}`                                 | WooCommerce terms and conditions page URL  |
 | `{woo_url:privacy}`                               | WooCommerce privacy policy page URL        |
@@ -147,6 +148,24 @@ Use these tags in Account v2 states.
 | Account addresses state          | `{woo_account_addresses_description}`                                                                                                                                                             |
 | `wooAccountAddresses` query loop | `{woo_account_address_type}`, `{woo_account_address_title}`, `{woo_account_address}`, `{woo_account_address_has_address}`, `{woo_account_address_edit_url}`, `{woo_account_address_action_label}` |
 | Account edit-address state       | `{woo_account_edit_address_title}`, `{woo_account_edit_address_type}`, `{woo_account_edit_address_type_label}`                                                                                    |
+
+### Order withdrawal tags
+
+These Bricks 2.4 tags require advanced modular elements and WooCommerce 11.1 or later with **Order Withdrawal** enabled. Use them inside the [Account Page v2 Order withdrawal state](/builder/elements/woocommerce/account-page-v2/#order-withdrawal).
+
+| Tag | Output |
+| --- | --- |
+| `{woo_order_withdrawal_screen}` | Current screen: `form`, `review`, or `confirmation`. Empty in the builder. |
+| `{woo_order_withdrawal_value:first_name}` | Submitted first name. |
+| `{woo_order_withdrawal_value:last_name}` | Submitted last name. |
+| `{woo_order_withdrawal_value:email}` | Submitted email address. |
+| `{woo_order_withdrawal_value:email_confirmation}` | Submitted email confirmation. |
+| `{woo_order_withdrawal_value:order_number}` | Submitted order number. |
+| `{woo_order_withdrawal_value:withdrawal_type}` | Submitted withdrawal type key, such as `full_order` or `specific_items_only`. |
+| `{woo_order_withdrawal_value:withdrawal_type_label}` | Withdrawal type label, such as **Entire order** or **Specific items only**. |
+| `{woo_order_withdrawal_value:additional_details}` | Submitted additional details, with line breaks preserved in text output. Displays **None provided** when empty. |
+
+The value tags display sample data in the builder and submitted form values on the frontend. They do not retrieve data from a matching WooCommerce order or create an order context for order tags and query loops. Outside the withdrawal state's frontend rendering, these tags return no value.
 
 ## Order tags
 
@@ -251,12 +270,17 @@ Use **Checkout : Needs shipping address** for the **Ship to another address** co
 
 See [Element Conditions](/builder/features/element-conditions/#woocommerce) for condition setup and comparison behavior.
 
+Use **Order withdrawal screen** with **Your details**, **Review**, or **Confirmation** to show the matching section inside the Account Page v2 withdrawal state. It requires advanced modular elements and WooCommerce Order Withdrawal to be enabled. All three sections remain visible in the builder.
+
 ## Interactions
 
-Advanced modular WooCommerce layouts also add two interaction triggers:
+Bricks 2.4 adds these WooCommerce interaction triggers:
 
+- **Bricks cart contents changed** - Runs after a confirmed AJAX item addition, removal, or quantity change and the related UI updates finish. It does not run for initial synchronization, unchanged quantities, failed updates, or coupon, address, shipping, and totals-only recalculations.
 - **Bricks dynamic fragments refreshed** - Runs after Dynamic fragment content has been refreshed.
 - **Bricks checkout step changed** - Runs after a Checkout v2 step changes.
+
+**Bricks cart contents changed** is available whenever WooCommerce is active, including pages without Dynamic fragments. The other two triggers require advanced modular elements. For a custom cart confirmation popup, use [Bricks cart contents changed](/builder/features/interactions/#cart-contents-changed). A fragment refresh alone does not confirm that cart items changed.
 
 The **Checkout step** interaction action can move a multistep checkout to the next step, previous step, a specific step, or a specific checkout field. It can also scroll the target step or field into view.
 
@@ -267,6 +291,13 @@ See [Checkout v2 multistep checkout](/integrations/woocommerce/multistep-checkou
 Developers can listen for the same frontend events:
 
 ```js
+document.body.addEventListener(
+  "bricks/woocommerce/cart-contents-changed",
+  (event) => {
+    console.log(event.detail.requestId, event.detail.sourceEvent);
+  },
+);
+
 document.body.addEventListener(
   "bricks/woocommerce/fragments/refreshed",
   (event) => {
@@ -281,3 +312,5 @@ document.body.addEventListener(
   },
 );
 ```
+
+For `bricks/woocommerce/cart-contents-changed`, `requestId` identifies the confirmed request. `sourceEvent` contains the AJAX endpoint name, such as `bricks_update_cart_item_quantity`, or `update_cart` for a cart-page request. The event does not include cart item data.

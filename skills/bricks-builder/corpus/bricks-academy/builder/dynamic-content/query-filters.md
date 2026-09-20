@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/builder/dynamic-content/query-fil
 pageType: "article"
 section: "builder"
 category: "dynamic-content"
-lastmod: "2026-08-20T13:12:40.000Z"
+lastmod: "2026-09-16T10:41:20.000Z"
 ---
 Query Sort, Filter & Live Search lets visitors change a Bricks Query Loop without a full page reload. You can add search inputs, checkboxes, radio buttons, selects, range sliders, date pickers, submit/reset buttons, active-filter displays, and AJAX pagination.
 
@@ -122,6 +122,10 @@ Important controls:
 - **Min. characters**: Minimum input length before the search runs.
 - **Search Criteria**: Custom fields, post fields, term fields, user fields, taxonomies, and weighting options where supported.
 - **Clear icon**: Lets visitors clear the search value.
+- **Enter action** (Bricks 2.4): Run an AJAX search (default) or redirect to a URL with the current query's filter parameters. A target query is required.
+- **Trigger Filter Submit interactions** (Bricks 2.4): Optionally run submit start/end interactions for an Enter-key AJAX search. Ordinary typing and redirects do not run these interactions.
+
+Pressing Enter submits immediately, including with **Apply on: Submit**, without waiting for the typing debounce or minimum character threshold. See [Filter Search](/builder/elements/filter/filter-search/#search-with-enter) for redirect and interaction setup.
 
 ![](imgs/example-filter-search-clear-icon-ce9a852037.png)
 
@@ -193,7 +197,9 @@ Use Submit when filters should wait before refreshing the query. Use Reset to cl
 
 Submit can redirect to another URL while preserving current filter values. This is useful for a homepage live-search input that sends visitors to a search results page.
 
-Reset can hide itself when no filter is active. Bricks adds a class you can style when there are no active filters.
+Since Bricks 2.4, **Exclude filter IDs** lets a Reset button preserve selected filters. Enter their Bricks element IDs, separated by commas. For example, exclude a Search filter to keep the search term while clearing category and price refinements. This is separate from the Active Filters element's display exclusions.
+
+With **Hide if no active filter** enabled, Reset hides when no non-excluded filters are active. An excluded search term can remain active while the reset button is hidden. Bricks adds the `brx-no-active-filter` class to this button. See [Filter Submit / Reset](/builder/elements/filter/filter-submit/#preserve-a-search-while-resetting-refinements).
 
 ![](imgs/filter-submit-controls-1.11-5567d8daf8.png)
 

@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/developer/schema/elements/post-to
 pageType: "article"
 section: "developer"
 category: "schema"
-lastmod: "2026-08-20T13:12:40.000Z"
+lastmod: "2026-09-16T10:41:20.000Z"
 ---
 import SchemaJson from '../../../../../components/SchemaJson.astro'
 
@@ -29,10 +29,10 @@ import SchemaJson from '../../../../../components/SchemaJson.astro'
 | `collapseInactive` | checkbox | Collapse inactive | — |
 | `noWrap` | checkbox | No wrap | — |
 | `sticky` | checkbox | Sticky | — |
-| `stickyTop` | number | Top | `top` on `&[data-sticky]` |
+| `stickyTop` | number | stickyTop | `top` on `&[data-sticky]` |
 | `headingsOffset` | number | Headings offset | — |
 | `itemPadding` | spacing | Padding | `padding` on `.toc-list-item` |
-| `itemBorder` | border | Border | `border` on `.toc-link::before` |
+| `itemBorder` | border | Border | `border` on `.toc-link\{pseudo\}::before` |
 | `itemTypography` | typography | Typography | `font` on `.toc-link` |
 | `itemBorderActive` | border | Border | `border` on `.toc-link.is-active-link::before` |
 | `itemTypographyActive` | typography | Typography | `font` on `.toc-link.is-active-link` |
@@ -54,12 +54,12 @@ Shared CSS controls available on all elements. Keys are prefixed with `_` and su
 | `_heightMax` | number | Max. height | `max-height` |
 | `_aspectRatio` | text | Aspect ratio | `aspect-ratio` |
 | `_position` | select | Position | `position` |
-| `_top` | number | Top | `top` |
+| `_top` | number | _top | `top` |
 | `_right` | number | Right | `right` |
 | `_bottom` | number | Bottom | `bottom` |
 | `_left` | number | Left | `left` |
 | `_zIndex` | number | Z-index | `z-index` |
-| `_order` | number | Order | `order` |
+| `_order` | number | _order | `order` |
 | `_display` | select | Display | `display`, `align-items` |
 | `_visibility` | select | Visibility | `visibility` |
 | `_overflow` | text | Overflow | `overflow` |

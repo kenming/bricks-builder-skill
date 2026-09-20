@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/builder/features/interactions.md"
 pageType: "article"
 section: "builder"
 category: "features"
-lastmod: "2026-08-20T13:12:40.000Z"
+lastmod: "2026-09-16T10:41:20.000Z"
 ---
 Interactions, available since Bricks 1.6, let you run an action when something happens on the front end. A simple interaction can show a hidden element on click. A more advanced interaction can listen for a query AJAX event, check browser storage, fetch an AJAX popup with the right post context, or call a custom JavaScript function.
 
@@ -131,15 +131,48 @@ When WooCommerce is active, Bricks adds WooCommerce interaction triggers:
 - Added to cart
 - Adding to cart
 - Removed from cart
+- Bricks cart contents changed
 - Cart updated
 - Coupon applied
 - Coupon removed
 - Bricks dynamic fragments refreshed
 - Bricks checkout step changed
 
-The classic WooCommerce triggers listen for WooCommerce frontend jQuery events. **Bricks dynamic fragments refreshed** and **Bricks checkout step changed** listen for Bricks custom events emitted by Dynamic fragment refreshes and Checkout v2 step changes.
+The classic WooCommerce triggers listen for WooCommerce frontend jQuery events. **Bricks cart contents changed**, **Bricks dynamic fragments refreshed**, and **Bricks checkout step changed** listen for Bricks custom events and are available since Bricks 2.4.
 
-The dynamic fragments refreshed and checkout step changed triggers are available since Bricks 2.4.
+#### Bricks cart contents changed {#cart-contents-changed}
+
+Use **Bricks cart contents changed** to show a custom notice or popup after a successful AJAX addition, removal, or quantity change. It covers cart, Checkout v2, mini-cart, and Cart contents loop updates handled by Bricks and WooCommerce, including loops inside Dynamic fragments.
+
+The trigger runs after the server confirms an item change and the related cart, checkout, and fragment updates finish. A change that needs several refresh requests produces one notification. Separate confirmed changes each produce a notification, even when their refreshes are combined.
+
+It does not run for:
+
+- Initial page loading or synchronization of cached cart content.
+- Submitting a quantity without changing its value.
+- Failed requests or failed related UI refreshes.
+- Coupon, shipping, address, or totals-only recalculations.
+
+WooCommerce must be active. This trigger does not require **Enable advanced modular elements** or a Dynamic fragment on the page. It listens for supported AJAX cart updates, so a normal page reload or a custom third-party cart request is not a guaranteed trigger.
+
+Choose the trigger that matches the behavior you need:
+
+| Trigger | When to use it |
+| --- | --- |
+| **Bricks cart contents changed** | Show a confirmation after an item is added, removed, or its quantity changes successfully. |
+| **Added to cart** | Respond only to an AJAX addition, such as toggling a mini-cart Offcanvas. |
+| **Cart updated** | Respond to WooCommerce's `updated_cart_totals` event. This is not a general confirmation of every cart item change, particularly in checkout. |
+| **Bricks dynamic fragments refreshed** | Run an action after Dynamic fragment content is replaced. This can also happen on initial synchronization or checkout recalculation without an item change. |
+
+To show a “Cart updated” popup:
+
+1. Create a [popup template](/builder/features/popup-builder/) containing your confirmation message and a close control.
+2. On an element that renders on the relevant pages, open **Interactions** and add an interaction.
+3. Set **Trigger** to **Bricks cart contents changed**.
+4. Set **Action** to **Show element** and **Target** to **Popup**, then select your popup template.
+5. Leave **Run only once** disabled if the popup should appear after each confirmed change.
+
+Test on the frontend by adding an item, changing its quantity, and removing it. Close the popup between changes. Reload the page or change only a checkout address to confirm the popup stays closed.
 
 ## Actions {#action}
 
@@ -417,7 +450,7 @@ Bricks AJAX includes Infinite Scroll, Load More, AJAX pagination, and Query Filt
 
 Use **Query AJAX loader (Start)** to run an action before a query AJAX request starts, and **Query AJAX loader (End)** to run an action after it completes.
 
-Use the Filter Submit triggers when the interaction should run only in response to a visitor clicking a Filter - Submit element.
+Use the Filter Submit triggers for AJAX submissions from a Filter - Submit element or an Enter-key search with **Trigger Filter Submit interactions** enabled.
 
 ##### Example: Apply opacity during AJAX loading
 
@@ -447,7 +480,7 @@ document.addEventListener('bricks/ajax/start', (event) => {
 
 ## Filter Submit triggers {#filter-submit-triggers}
 
-Filter Submit triggers were introduced in Bricks 2.4. They listen to AJAX submissions from the [Filter - Submit element](/builder/dynamic-content/query-filters/#filter-submit-reset-element) for a selected query ID.
+Filter Submit triggers were introduced in Bricks 2.4. They listen to AJAX submissions from the [Filter - Submit element](/builder/dynamic-content/query-filters/#filter-submit-reset-element) for a selected query ID. They also run when a visitor presses Enter in a [Filter - Search element](/builder/elements/filter/filter-search/#search-with-enter) with **Trigger Filter Submit interactions** enabled. Ordinary typing does not run these triggers.
 
 - **Filter Submit (Start)** runs after Bricks updates the selected filter values and before the AJAX filter request starts.
 - **Filter Submit (End)** runs after the AJAX filter request finishes.
@@ -456,7 +489,7 @@ Select the target query in the **Query** control. Bricks only runs the interacti
 
 These triggers are useful when filters are placed inside an Offcanvas on mobile. Add a **Filter Submit (End)** interaction that closes the Offcanvas, and it will run after the submitted filter results have finished loading. Use **Filter Submit (Start)** if the Offcanvas should close as soon as the visitor clicks Submit.
 
-Filter Submit triggers only run for AJAX filter submissions that refresh the current page results. They do not run when the Submit element redirects to another URL.
+Filter Submit triggers only run for AJAX filter submissions that refresh the current page results. They do not run when the Submit or Search element redirects to another URL.
 
 The underlying JavaScript events are documented in [Custom JavaScript events in Bricks](/developer/guides/custom-javascript-events-in-bricks/#filter-submit-event-sequence).
 

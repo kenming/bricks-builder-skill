@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/builder/elements/general/form.md"
 pageType: "article"
 section: "builder"
 category: "elements"
-lastmod: "2026-08-20T13:12:40.000Z"
+lastmod: "2026-09-16T10:41:20.000Z"
 ---
 The Form element lets you build custom forms with the following form field types:
 
@@ -157,6 +157,21 @@ When using **Lost password** or **Reset password** actions, you **do not need to
 :::
 
 For detailed instructions on configuring custom authentication pages using the Form element, please visit the [Authentication Pages](/builder/features/custom-authentication-pages/) article.
+
+#### Confirm a password
+
+Since Bricks 2.4, a Password field can check that its value matches another Password field in the same form. Use this for registration or password reset forms:
+
+1. Add two **Password** fields, labeled **Password** and **Confirm password**.
+2. Copy the field ID shown at the end of the main Password field's settings.
+3. Open the Confirm password field and enable **Mark as confirmation password**.
+4. Paste the main field's ID into **Main password field ID**, without curly brackets or a `form-field-` prefix.
+5. Set **Password mismatch error message** if you want to replace the default "Passwords do not match" message.
+6. Map the authentication action's Password setting to the main field.
+
+Bricks checks the values when the form is submitted. A mismatch prevents the form actions from running. Leaving **Main password field ID** empty skips the comparison, so always link the confirmation field to the correct field ID.
+
+Matching and required-field validation are separate. Two empty optional fields pass the comparison. Enable **Required** on both fields when visitors must enter a password.
 
 ### Redirect {#redirect}
 

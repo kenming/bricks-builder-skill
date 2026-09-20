@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/integrations/woocommerce/create-c
 pageType: "article"
 section: "integrations"
 category: "woocommerce"
-lastmod: "2026-08-20T13:12:40.000Z"
+lastmod: "2026-09-16T10:41:20.000Z"
 ---
 Use the Dynamic fragment element when you need cart-dependent content outside the main Cart page, such as a custom mini cart in a header Offcanvas, dropdown, or popup.
 
@@ -121,9 +121,13 @@ Add a condition to the Offcanvas if you do not want this behavior on checkout. F
 
 ![](imgs/dynamic-fragment-offcanvas-mini-cart-interaction-470e344a3b.png)
 
+Keep **Added to cart** for this interaction if the Offcanvas should toggle only after an addition. The [Bricks cart contents changed](/builder/features/interactions/#cart-contents-changed) trigger, available since Bricks 2.4, also runs after successful AJAX quantity changes and removals. Using it with **Toggle offcanvas** would toggle the mini cart during those updates too.
+
 ## Preview the refresh behavior
 
 Dynamic fragment refreshes on the frontend after WooCommerce cart events such as add to cart, remove from cart, cart emptied, cart totals updated, checkout updated, and coupon apply/remove events.
+
+The **Bricks dynamic fragments refreshed** interaction signals that fragment content has been replaced. It can run during initial synchronization or checkout recalculation without a cart item change. To show a custom “Cart updated” confirmation, use **Bricks cart contents changed**, which waits for a confirmed item change and the related UI updates to finish.
 
 To test the mini cart:
 

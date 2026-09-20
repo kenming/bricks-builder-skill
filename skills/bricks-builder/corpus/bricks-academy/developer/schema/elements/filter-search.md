@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/developer/schema/elements/filter-
 pageType: "article"
 section: "developer"
 category: "schema"
-lastmod: "2026-08-20T13:12:40.000Z"
+lastmod: "2026-09-16T10:41:20.000Z"
 ---
 import SchemaJson from '../../../../../components/SchemaJson.astro'
 
@@ -23,6 +23,34 @@ import SchemaJson from '../../../../../components/SchemaJson.astro'
 
 | Key | Type | Label | CSS |
 |---|---|---|---|
+| `filterQueryId` | query-list | Target query | — |
+| `filterNiceName` | text | URL parameter | — |
+| `filterApplyOn` | select | Apply on | — |
+| `filterActivePrefix` | text | Prefix | — |
+| `filterActiveSuffix` | text | Suffix | — |
+| `filterActiveTitle` | text | Title | — |
+| `filterInputDebounce` | number | Debounce | — |
+| `filterMinChars` | number | Min. characters | — |
+| `filterEnterAction` | select | Enter action | — |
+| `filterEnterTriggerSubmit` | checkbox | Trigger Filter Submit interactions | — |
+| `redirectTo` | text | Redirect to | — |
+| `newTab` | checkbox | Open in new tab | — |
+| `searchCriteriaCustom` | checkbox | Custom search criteria | — |
+| `useWeightScore` | checkbox | Use weight score | — |
+| `searchPostFields` | checkbox | Search post fields | — |
+| `searchPostQuery` | repeater | Post fields | — |
+| `searchPostMeta` | checkbox | Search post meta fields | — |
+| `searchPostMetaKeys` | repeater | Post meta keys | — |
+| `searchPostTerms` | checkbox | Search post terms | — |
+| `searchPostTaxonomies` | repeater | Taxonomies | — |
+| `searchTermFields` | checkbox | Search term fields | — |
+| `searchTermQuery` | repeater | Term fields | — |
+| `searchTermMeta` | checkbox | Search term meta fields | — |
+| `searchTermMetaKeys` | repeater | Term meta keys | — |
+| `searchUserFields` | checkbox | Search user fields | — |
+| `searchUserQuery` | repeater | User fields | — |
+| `searchUserMeta` | checkbox | Search user meta fields | — |
+| `searchUserMetaKeys` | repeater | User meta keys | — |
 | `placeholder` | text | Placeholder | — |
 | `placeholderTypography` | typography | Placeholder typography | `font` on `input::placeholder` |
 | `label` | text | Label | — |
@@ -30,6 +58,19 @@ import SchemaJson from '../../../../../components/SchemaJson.astro'
 | `icon` | icon | Icon | — |
 | `iconColor` | color | Icon color | `color` on `.icon` |
 | `iconSize` | number | Icon size | `font-size` on `.icon` |
+
+## Bricks 2.4 search submission settings
+
+These query-filter settings are available when Query Filters are enabled. Use the controls above to configure the Enter-key behavior below.
+
+| Key | Type | Values and behavior |
+| --- | --- | --- |
+| `filterEnterAction` | string | `default` for AJAX search, or `redirect` for Redirect to URL. Omitted values use AJAX search. Requires `filterQueryId`. |
+| `filterEnterTriggerSubmit` | boolean | Opt into Filter Submit start/end interactions for an Enter-key AJAX search. Default: `false`. |
+| `redirectTo` | string | Destination URL for `filterEnterAction: "redirect"`. Active filters for the target query become URL parameters. Empty values fall back to AJAX search. |
+| `newTab` | boolean | Open the configured redirect in a new tab. Default: `false`. |
+
+See [Filter Search](/builder/elements/filter/filter-search/#search-with-enter) for setup and Enter-key behavior.
 
 ## Inherited CSS controls
 
@@ -48,12 +89,12 @@ Shared CSS controls available on all elements. Keys are prefixed with `_` and su
 | `_heightMax` | number | Max. height | `max-height` |
 | `_aspectRatio` | text | Aspect ratio | `aspect-ratio` |
 | `_position` | select | Position | `position` |
-| `_top` | number | Top | `top` |
+| `_top` | number | _top | `top` |
 | `_right` | number | Right | `right` |
 | `_bottom` | number | Bottom | `bottom` |
 | `_left` | number | Left | `left` |
 | `_zIndex` | number | Z-index | `z-index` |
-| `_order` | number | Order | `order` |
+| `_order` | number | _order | `order` |
 | `_display` | select | Display | `display`, `align-items` |
 | `_visibility` | select | Visibility | `visibility` |
 | `_overflow` | text | Overflow | `overflow` |

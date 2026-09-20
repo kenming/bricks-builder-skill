@@ -1,12 +1,12 @@
 ---
 title: "Components Schema"
-description: "Reference for the Bricks Components schema, including the exported structure and top-level properties used in global settings."
+description: "Documentation for Components Schema in Bricks Academy."
 canonical: "https://academy.bricksbuilder.io/developer/schema/global/components/"
 markdownUrl: "https://academy.bricksbuilder.io/developer/schema/global/components.md"
 pageType: "article"
 section: "developer"
 category: "schema"
-lastmod: "2026-08-20T13:12:40.000Z"
+lastmod: "2026-09-16T10:41:20.000Z"
 ---
 import SchemaJson from '../../../../../components/SchemaJson.astro'
 
@@ -21,6 +21,7 @@ import SchemaJson from '../../../../../components/SchemaJson.astro'
 | `desc` | string | — |
 | `elements` | array | — |
 | `properties` | array | — |
+| `propertyGroups` | array | — |
 | `_created` | integer \| string | — |
 | `_user_id` | integer \| string | — |
 | `_version` | string | — |

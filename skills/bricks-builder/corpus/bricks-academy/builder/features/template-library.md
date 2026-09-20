@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/builder/features/template-library
 pageType: "article"
 section: "builder"
 category: "features"
-lastmod: "2026-08-20T13:12:40.000Z"
+lastmod: "2026-09-16T10:41:20.000Z"
 ---
 In Bricks 2.4, templates are managed inside the Builder Browser. Open it by clicking the folder icon in the builder toolbar.
 

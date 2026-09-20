@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/developer/schema/elements/filter-
 pageType: "article"
 section: "developer"
 category: "schema"
-lastmod: "2026-08-20T13:12:40.000Z"
+lastmod: "2026-09-16T10:41:20.000Z"
 ---
 import SchemaJson from '../../../../../components/SchemaJson.astro'
 
@@ -18,6 +18,75 @@ import SchemaJson from '../../../../../components/SchemaJson.astro'
 | `nestable` | false |
 
 <SchemaJson path="elements/filter-radio.json" />
+
+## Controls
+
+| Key | Type | Label | CSS |
+|---|---|---|---|
+| `filterQueryId` | query-list | Target query | — |
+| `filterNiceName` | text | URL parameter | — |
+| `filterApplyOn` | select | Apply on | — |
+| `filterAction` | select | Action | — |
+| `filterSource` | select | Source | — |
+| `sourceFieldType` | select | Field type | — |
+| `wpPostField` | select | Field | — |
+| `wpUserField` | select | Field | — |
+| `wpTermField` | select | Field | — |
+| `filterTaxonomy` | select | Taxonomy | — |
+| `filterTaxonomyOrderBy` | select | Order by | — |
+| `filterTaxonomyOrderMetaKey` | text | Order meta key | — |
+| `filterTaxonomyOrder` | select | filterTaxonomyOrder | — |
+| `filterTermInclude` | select | filterTermInclude | — |
+| `filterTermExclude` | select | filterTermExclude | — |
+| `filterTermTopLevel` | checkbox | Top level terms only | — |
+| `filterHideCount` | checkbox | Hide count | — |
+| `filterHideEmpty` | checkbox | Hide empty | — |
+| `filterCountNoBracket` | checkbox | Hide count bracket | — |
+| `filterHierarchical` | checkbox | Hierarchical | — |
+| `filterChildIndentation` | text | Indent | — |
+| `filterChildIndentationGap` | number | Indent | `margin-inline-start` on `[class*="depth-"]:not([class*="depth-0"])` |
+| `fieldProvider` | select | Provider | — |
+| `customFieldKey` | text | Meta key | — |
+| `fieldCompareOperator` | select | Compare | — |
+| `fieldCompareType` | select | Compare type | — |
+| `filterGroupLabel` | text | Group label | — |
+| `filterHideAllOption` | checkbox | Hide "All" option | — |
+| `filterLabelAll` | text | Label | — |
+| `labelMapping` | select | Label | — |
+| `customLabelMapping` | repeater | Label | — |
+| `populatedOptionsOrderBy` | select | Order by | — |
+| `populatedOptionsOrder` | select | populatedOptionsOrder | — |
+| `sortOptions` | repeater | Sort options | — |
+| `perPageOptions` | text | Options | — |
+| `displayMode` | select | Mode | — |
+| `optionsGap` | number | Option | `--brx-options-gap` |
+| `buttonOptionsGap` | number | Option | `--brx-btn-options-gap` |
+| `optionsTypography` | typography | Option | `font` on `.brx-option-text` |
+| `countAlignEnd` | checkbox | Count | — |
+| `countTypography` | typography | Count | `font` on `.brx-option-count` |
+| `buttonSize` | select | Size | — |
+| `buttonStyle` | select | Style | — |
+| `buttonCircle` | checkbox | Circle | — |
+| `buttonOutline` | checkbox | Outline | — |
+| `buttonBackgroundColor` | color | Background color | `background-color` on `&[data-mode="button"] .bricks-button` |
+| `buttonBorder` | border | Border | `border-color` on `&[data-mode="button"] .bricks-button` |
+| `buttonTypography` | typography | Typography | `font` on `&[data-mode="button"] .bricks-button` |
+| `buttonActiveBackgroundColor` | color | Background color | `background-color` on `&[data-mode="button"] .bricks-button.brx-option-active` |
+| `buttonActiveBorder` | border | Border | `border-color` on `&[data-mode="button"] .bricks-button.brx-option-active` |
+| `buttonActiveTypography` | typography | Typography | `font` on `&[data-mode="button"] .bricks-button.brx-option-active` |
+| `filterActivePrefix` | text | Prefix | — |
+| `filterActiveSuffix` | text | Suffix | — |
+| `filterActiveTitle` | text | Title | — |
+| `limitOptions` | number | Visible options limit | — |
+| `showMoreText` | text | Show more | — |
+| `showLessText` | text | Show less | — |
+| `showMoreButtonSize` | select | Size | — |
+| `showMoreButtonStyle` | select | Style | — |
+| `showMoreButtonCircle` | checkbox | Circle | — |
+| `showMoreButtonOutline` | checkbox | Outline | — |
+| `showMoreButtonBackgroundColor` | color | Background color | `background-color` on `.brx-show-more-less-button` |
+| `showMoreButtonBorder` | border | Border | `border-color` on `.brx-show-more-less-button` |
+| `showMoreButtonTypography` | typography | Typography | `font` on `.bricks-button.brx-show-more-less-button` |
 
 ## Inherited CSS controls
 
@@ -36,12 +105,12 @@ Shared CSS controls available on all elements. Keys are prefixed with `_` and su
 | `_heightMax` | number | Max. height | `max-height` |
 | `_aspectRatio` | text | Aspect ratio | `aspect-ratio` |
 | `_position` | select | Position | `position` |
-| `_top` | number | Top | `top` |
+| `_top` | number | _top | `top` |
 | `_right` | number | Right | `right` |
 | `_bottom` | number | Bottom | `bottom` |
 | `_left` | number | Left | `left` |
 | `_zIndex` | number | Z-index | `z-index` |
-| `_order` | number | Order | `order` |
+| `_order` | number | _order | `order` |
 | `_display` | select | Display | `display`, `align-items` |
 | `_visibility` | select | Visibility | `visibility` |
 | `_overflow` | text | Overflow | `overflow` |

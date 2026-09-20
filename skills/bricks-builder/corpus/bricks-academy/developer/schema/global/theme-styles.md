@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/developer/schema/global/theme-sty
 pageType: "article"
 section: "developer"
 category: "schema"
-lastmod: "2026-08-20T13:12:40.000Z"
+lastmod: "2026-09-16T10:41:20.000Z"
 ---
 import SchemaJson from '../../../../../components/SchemaJson.astro'
 
@@ -87,15 +87,25 @@ Theme style controls for the "block" section. Default CSS selector: .brxe-block
 
 | Key | Type | Label | CSS |
 |---|---|---|---|
-| `_display` | select | Display | `display` on `.brxe-block:where(:not(.accordion-content-wrapper):not(.accordion-title-wrapper))` |
+| `_display` | select | Display | `display` on `.brxe-block:where(:not(.accordion-content-wrapper):not(.accordion-title-wrapper))`, `align-items` on `.brxe-block:where(:not(.accordion-content-wrapper):not(.accordion-title-wrapper))` |
+| `_gridGap` | number | Gap | `gap` on `.brxe-block:where(:not(.accordion-content-wrapper):not(.accordion-title-wrapper))` |
+| `_columnGap` | number | Column gap | `column-gap` on `.brxe-block` |
+| `_rowGap` | number | Row gap | `row-gap` on `.brxe-block` |
+| `_gridTemplateColumns` | text | Grid template columns | `grid-template-columns` on `.brxe-block:where(:not(.accordion-content-wrapper):not(.accordion-title-wrapper))` |
+| `_gridTemplateRows` | text | Grid template rows | `grid-template-rows` on `.brxe-block:where(:not(.accordion-content-wrapper):not(.accordion-title-wrapper))` |
+| `_gridAutoColumns` | text | Grid auto columns | `grid-auto-columns` on `.brxe-block:where(:not(.accordion-content-wrapper):not(.accordion-title-wrapper))` |
+| `_gridAutoRows` | text | Grid auto rows | `grid-auto-rows` on `.brxe-block:where(:not(.accordion-content-wrapper):not(.accordion-title-wrapper))` |
+| `_gridAutoFlow` | select | Grid auto flow | `grid-auto-flow` on `.brxe-block:where(:not(.accordion-content-wrapper):not(.accordion-title-wrapper))` |
+| `_justifyItemsGrid` | justify-content | Justify items | `justify-items` on `.brxe-block:where(:not(.accordion-content-wrapper):not(.accordion-title-wrapper))` |
+| `_alignItemsGrid` | align-items | Align items | `align-items` on `.brxe-block:where(:not(.accordion-content-wrapper):not(.accordion-title-wrapper))` |
+| `_justifyContentGrid` | justify-content | Justify content | `justify-content` on `.brxe-block:where(:not(.accordion-content-wrapper):not(.accordion-title-wrapper))` |
+| `_alignContentGrid` | align-items | Align content | `align-content` on `.brxe-block:where(:not(.accordion-content-wrapper):not(.accordion-title-wrapper))` |
 | `_direction` | direction | Direction | `flex-direction` on `.brxe-block` |
 | `_justifyContent` | justify-content | Align main axis | `justify-content` on `.brxe-block` |
 | `_alignItems` | align-items | Align cross axis | `align-items` on `.brxe-block` |
 | `width` | number | Width | `width` on `.brxe-block` |
 | `widthMin` | number | Min. width | `min-width` on `.brxe-block` |
 | `widthMax` | number | Max. width | `max-width` on `.brxe-block` |
-| `_columnGap` | number | Column gap | `column-gap` on `.brxe-block` |
-| `_rowGap` | number | Row gap | `row-gap` on `.brxe-block` |
 | `margin` | spacing | Margin | `margin` on `.brxe-block` |
 | `padding` | spacing | Padding | `padding` on `.brxe-block` |
 
@@ -108,95 +118,95 @@ Theme style controls for the "button" section.
 | Key | Type | Label | CSS |
 |---|---|---|---|
 | `typography` | typography | Typography | `font` on `.bricks-button` |
-| `background` | color | Background color | `background-color` on `.bricks-button:not([class*="bricks-background-"]):not([class*="bricks-color-"]):not(.outline)` |
+| `background` | color | Background color | `background-color` on `.bricks-button:where(:not([class*="bricks-background-"]):not([class*="bricks-color-"]):not(.outline))` |
 | `border` | border | Border | `border` on `.bricks-button` |
 | `boxShadow` | box-shadow | Box shadow | `box-shadow` on `.bricks-button` |
 | `transition` | text | Transition | `transition` on `.bricks-button` |
-| `outlineBackground` | color | Outline | `background-color` on `.bricks-button.outline` |
-| `outlineBorder` | border | Outline | `border` on `.bricks-button.outline` |
-| `outlineBoxShadow` | box-shadow | Outline | `box-shadow` on `.bricks-button.outline` |
-| `outlineTypography` | typography | Outline | `font` on `.bricks-button.outline` |
-| `primaryTypography` | typography | Typography | `font` on `:root .bricks-button[class*="primary"]` |
-| `primaryBackground` | color | Background color | `background-color` on `:root .bricks-button[class*="primary"]:not(.outline)` |
-| `primaryBorder` | border | Border | `border` on `:root .bricks-button[class*="primary"]` |
-| `primaryBoxShadow` | box-shadow | Box shadow | `box-shadow` on `:root .bricks-button[class*="primary"]` |
-| `primaryOutlineBackground` | color | Outline | `background-color` on `:root .bricks-button[class*="primary"].outline` |
-| `primaryOutlineBorder` | border | Outline | `border` on `:root .bricks-button[class*="primary"].outline` |
-| `primaryOutlineBoxShadow` | box-shadow | Outline | `box-shadow` on `:root .bricks-button[class*="primary"].outline` |
-| `primaryOutlineTypography` | typography | Outline | `font` on `:root .bricks-button[class*="primary"].outline` |
-| `secondaryTypography` | typography | Typography | `font` on `:root .bricks-button[class*="secondary"]` |
-| `secondaryBackground` | color | Background color | `background-color` on `:root .bricks-button[class*="secondary"]:not(.outline)` |
-| `secondaryBorder` | border | Border | `border` on `:root .bricks-button[class*="secondary"]` |
-| `secondaryBoxShadow` | box-shadow | Box shadow | `box-shadow` on `:root .bricks-button[class*="secondary"]` |
-| `secondaryOutlineBackground` | color | Outline | `background-color` on `:root .bricks-button[class*="secondary"].outline` |
-| `secondaryOutlineBorder` | border | Outline | `border` on `:root .bricks-button[class*="secondary"].outline` |
-| `secondaryOutlineBoxShadow` | box-shadow | Outline | `box-shadow` on `:root .bricks-button[class*="secondary"].outline` |
-| `secondaryOutlineTypography` | typography | Outline | `font` on `:root .bricks-button[class*="secondary"].outline` |
-| `lightTypography` | typography | Typography | `font` on `:root .bricks-button[class*="light"]:not(.bricks-lightbox)` |
-| `lightBackground` | color | Background color | `background-color` on `:root .bricks-button[class*="light"]:not(.outline):not(.bricks-lightbox)` |
-| `lightBorder` | border | Border | `border` on `:root .bricks-button[class*="light"]:not(.bricks-lightbox)` |
-| `lightBoxShadow` | box-shadow | Box shadow | `box-shadow` on `:root .bricks-button[class*="light"]:not(.bricks-lightbox)` |
-| `lightOutlineBackground` | color | Outline | `background-color` on `:root .bricks-button[class*="light"].outline` |
-| `lightOutlineBorder` | border | Outline | `border` on `:root .bricks-button[class*="light"].outline` |
-| `lightOutlineBoxShadow` | box-shadow | Outline | `box-shadow` on `:root .bricks-button[class*="light"].outline` |
-| `lightOutlineTypography` | typography | Outline | `font` on `:root .bricks-button[class*="light"].outline` |
-| `darkTypography` | typography | Typography | `font` on `:root .bricks-button[class*="dark"]` |
-| `darkBackground` | color | Background color | `background-color` on `:root .bricks-button[class*="dark"]:not(.outline)` |
-| `darkBorder` | border | Border | `border` on `:root .bricks-button[class*="dark"]` |
-| `darkBoxShadow` | box-shadow | Box shadow | `box-shadow` on `:root .bricks-button[class*="dark"]` |
-| `darkOutlineBackground` | color | Outline | `background-color` on `:root .bricks-button[class*="dark"].outline` |
-| `darkOutlineBorder` | border | Outline | `border` on `:root .bricks-button[class*="dark"].outline` |
-| `darkOutlineBoxShadow` | box-shadow | Outline | `box-shadow` on `:root .bricks-button[class*="dark"].outline` |
-| `darkOutlineTypography` | typography | Outline | `font` on `:root .bricks-button[class*="dark"].outline` |
-| `mutedTypography` | typography | Typography | `font` on `:root .bricks-button[class*="muted"]` |
-| `mutedBackground` | color | Background color | `background-color` on `:root .bricks-button[class*="muted"]:not(.outline)` |
-| `mutedBorder` | border | Border | `border` on `:root .bricks-button[class*="muted"]` |
-| `mutedBoxShadow` | box-shadow | Box shadow | `box-shadow` on `:root .bricks-button[class*="muted"]` |
-| `mutedOutlineBackground` | color | Outline | `background-color` on `:root .bricks-button[class*="muted"].outline` |
-| `mutedOutlineBorder` | border | Outline | `border` on `:root .bricks-button[class*="muted"].outline` |
-| `mutedOutlineBoxShadow` | box-shadow | Outline | `box-shadow` on `:root .bricks-button[class*="muted"].outline` |
-| `mutedOutlineTypography` | typography | Outline | `font` on `:root .bricks-button[class*="muted"].outline` |
-| `infoTypography` | typography | Typography | `font` on `:root .bricks-button[class*="info"]` |
-| `infoBackground` | color | Background color | `background-color` on `:root .bricks-button[class*="info"]:not(.outline)` |
-| `infoBorder` | border | Border | `border` on `:root .bricks-button[class*="info"]` |
-| `infoBoxShadow` | box-shadow | Box shadow | `box-shadow` on `:root .bricks-button[class*="info"]` |
-| `infoOutlineBackground` | color | Outline | `background-color` on `:root .bricks-button[class*="info"].outline` |
-| `infoOutlineBorder` | border | Outline | `border` on `:root .bricks-button[class*="info"].outline` |
-| `infoOutlineBoxShadow` | box-shadow | Outline | `box-shadow` on `:root .bricks-button[class*="info"].outline` |
-| `infoOutlineTypography` | typography | Outline | `font` on `:root .bricks-button[class*="info"].outline` |
-| `successTypography` | typography | Typography | `font` on `:root .bricks-button[class*="success"]` |
-| `successBackground` | color | Background color | `background-color` on `:root .bricks-button[class*="success"]:not(.outline)` |
-| `successBorder` | border | Border | `border` on `:root .bricks-button[class*="success"]` |
-| `successBoxShadow` | box-shadow | Box shadow | `box-shadow` on `:root .bricks-button[class*="success"]` |
-| `successOutlineBackground` | color | Outline | `background-color` on `:root .bricks-button[class*="success"].outline` |
-| `successOutlineBorder` | border | Outline | `border` on `:root .bricks-button[class*="success"].outline` |
-| `successOutlineBoxShadow` | box-shadow | Outline | `box-shadow` on `:root .bricks-button[class*="success"].outline` |
-| `successOutlineTypography` | typography | Outline | `font` on `:root .bricks-button[class*="success"].outline` |
-| `warningTypography` | typography | Typography | `font` on `:root .bricks-button[class*="warning"]` |
-| `warningBackground` | color | Background color | `background-color` on `:root .bricks-button[class*="warning"]:not(.outline)` |
-| `warningBorder` | border | Border | `border` on `:root .bricks-button[class*="warning"]` |
-| `warningBoxShadow` | box-shadow | Box shadow | `box-shadow` on `:root .bricks-button[class*="warning"]` |
-| `warningOutlineBackground` | color | Outline | `background-color` on `:root .bricks-button[class*="warning"].outline` |
-| `warningOutlineBorder` | border | Outline | `border` on `:root .bricks-button[class*="warning"].outline` |
-| `warningOutlineBoxShadow` | box-shadow | Outline | `box-shadow` on `:root .bricks-button[class*="warning"].outline` |
-| `warningOutlineTypography` | typography | Outline | `font` on `:root .bricks-button[class*="warning"].outline` |
-| `dangerTypography` | typography | Typography | `font` on `:root .bricks-button[class*="danger"]` |
-| `dangerBackground` | color | Background color | `background-color` on `:root .bricks-button[class*="danger"]:not(.outline)` |
-| `dangerBorder` | border | Border | `border` on `:root .bricks-button[class*="danger"]` |
-| `dangerBoxShadow` | box-shadow | Box shadow | `box-shadow` on `:root .bricks-button[class*="danger"]` |
-| `dangerOutlineBackground` | color | Outline | `background-color` on `:root .bricks-button[class*="danger"].outline` |
-| `dangerOutlineBorder` | border | Outline | `border` on `:root .bricks-button[class*="danger"].outline` |
-| `dangerOutlineBoxShadow` | box-shadow | Outline | `box-shadow` on `:root .bricks-button[class*="danger"].outline` |
-| `dangerOutlineTypography` | typography | Outline | `font` on `:root .bricks-button[class*="danger"].outline` |
+| `outlineTypography` | typography | Outline | `font` on `.bricks-button:where(.outline)` |
+| `outlineBackground` | color | Outline | `background-color` on `.bricks-button:where(.outline)` |
+| `outlineBorder` | border | Outline | `border` on `.bricks-button:where(.outline)` |
+| `outlineBoxShadow` | box-shadow | Outline | `box-shadow` on `.bricks-button:where(.outline)` |
+| `primaryTypography` | typography | Typography | `font` |
+| `primaryBackground` | color | Background color | `background-color` |
+| `primaryBorder` | border | Border | `border` |
+| `primaryBoxShadow` | box-shadow | Box shadow | `box-shadow` |
+| `primaryOutlineTypography` | typography | Outline | `font` |
+| `primaryOutlineBackground` | color | Outline | `background-color` |
+| `primaryOutlineBorder` | border | Outline | `border` |
+| `primaryOutlineBoxShadow` | box-shadow | Outline | `box-shadow` |
+| `secondaryTypography` | typography | Typography | `font` |
+| `secondaryBackground` | color | Background color | `background-color` |
+| `secondaryBorder` | border | Border | `border` |
+| `secondaryBoxShadow` | box-shadow | Box shadow | `box-shadow` |
+| `secondaryOutlineTypography` | typography | Outline | `font` |
+| `secondaryOutlineBackground` | color | Outline | `background-color` |
+| `secondaryOutlineBorder` | border | Outline | `border` |
+| `secondaryOutlineBoxShadow` | box-shadow | Outline | `box-shadow` |
+| `lightTypography` | typography | Typography | `font` |
+| `lightBackground` | color | Background color | `background-color` |
+| `lightBorder` | border | Border | `border` |
+| `lightBoxShadow` | box-shadow | Box shadow | `box-shadow` |
+| `lightOutlineTypography` | typography | Outline | `font` |
+| `lightOutlineBackground` | color | Outline | `background-color` |
+| `lightOutlineBorder` | border | Outline | `border` |
+| `lightOutlineBoxShadow` | box-shadow | Outline | `box-shadow` |
+| `darkTypography` | typography | Typography | `font` |
+| `darkBackground` | color | Background color | `background-color` |
+| `darkBorder` | border | Border | `border` |
+| `darkBoxShadow` | box-shadow | Box shadow | `box-shadow` |
+| `darkOutlineTypography` | typography | Outline | `font` |
+| `darkOutlineBackground` | color | Outline | `background-color` |
+| `darkOutlineBorder` | border | Outline | `border` |
+| `darkOutlineBoxShadow` | box-shadow | Outline | `box-shadow` |
+| `mutedTypography` | typography | Typography | `font` |
+| `mutedBackground` | color | Background color | `background-color` |
+| `mutedBorder` | border | Border | `border` |
+| `mutedBoxShadow` | box-shadow | Box shadow | `box-shadow` |
+| `mutedOutlineTypography` | typography | Outline | `font` |
+| `mutedOutlineBackground` | color | Outline | `background-color` |
+| `mutedOutlineBorder` | border | Outline | `border` |
+| `mutedOutlineBoxShadow` | box-shadow | Outline | `box-shadow` |
+| `infoTypography` | typography | Typography | `font` |
+| `infoBackground` | color | Background color | `background-color` |
+| `infoBorder` | border | Border | `border` |
+| `infoBoxShadow` | box-shadow | Box shadow | `box-shadow` |
+| `infoOutlineTypography` | typography | Outline | `font` |
+| `infoOutlineBackground` | color | Outline | `background-color` |
+| `infoOutlineBorder` | border | Outline | `border` |
+| `infoOutlineBoxShadow` | box-shadow | Outline | `box-shadow` |
+| `successTypography` | typography | Typography | `font` |
+| `successBackground` | color | Background color | `background-color` |
+| `successBorder` | border | Border | `border` |
+| `successBoxShadow` | box-shadow | Box shadow | `box-shadow` |
+| `successOutlineTypography` | typography | Outline | `font` |
+| `successOutlineBackground` | color | Outline | `background-color` |
+| `successOutlineBorder` | border | Outline | `border` |
+| `successOutlineBoxShadow` | box-shadow | Outline | `box-shadow` |
+| `warningTypography` | typography | Typography | `font` |
+| `warningBackground` | color | Background color | `background-color` |
+| `warningBorder` | border | Border | `border` |
+| `warningBoxShadow` | box-shadow | Box shadow | `box-shadow` |
+| `warningOutlineTypography` | typography | Outline | `font` |
+| `warningOutlineBackground` | color | Outline | `background-color` |
+| `warningOutlineBorder` | border | Outline | `border` |
+| `warningOutlineBoxShadow` | box-shadow | Outline | `box-shadow` |
+| `dangerTypography` | typography | Typography | `font` |
+| `dangerBackground` | color | Background color | `background-color` |
+| `dangerBorder` | border | Border | `border` |
+| `dangerBoxShadow` | box-shadow | Box shadow | `box-shadow` |
+| `dangerOutlineTypography` | typography | Outline | `font` |
+| `dangerOutlineBackground` | color | Outline | `background-color` |
+| `dangerOutlineBorder` | border | Outline | `border` |
+| `dangerOutlineBoxShadow` | box-shadow | Outline | `box-shadow` |
 | `sizeDefaultPadding` | spacing | Padding | `padding` on `.bricks-button` |
-| `sizeSmPadding` | spacing | Padding | `padding` on `.bricks-button.sm` |
-| `sizeSmTypography` | typography | Typography | `font` on `.bricks-button.sm` |
-| `sizeMdPadding` | spacing | Padding | `padding` on `.bricks-button.md` |
-| `sizeMdTypography` | typography | Typography | `font` on `.bricks-button.md` |
-| `sizeLgPadding` | spacing | Padding | `padding` on `.bricks-button.lg` |
-| `sizeLgTypography` | typography | Typography | `font` on `.bricks-button.lg` |
-| `sizeXlPadding` | spacing | Padding | `padding` on `.bricks-button.xl` |
-| `sizeXlTypography` | typography | Typography | `font` on `.bricks-button.xl` |
+| `sizeSmPadding` | spacing | Padding | `padding` on `.bricks-button:where(.sm)` |
+| `sizeSmTypography` | typography | Typography | `font` on `.bricks-button:where(.sm)` |
+| `sizeMdPadding` | spacing | Padding | `padding` on `.bricks-button:where(.md)` |
+| `sizeMdTypography` | typography | Typography | `font` on `.bricks-button:where(.md)` |
+| `sizeLgPadding` | spacing | Padding | `padding` on `.bricks-button:where(.lg)` |
+| `sizeLgTypography` | typography | Typography | `font` on `.bricks-button:where(.lg)` |
+| `sizeXlPadding` | spacing | Padding | `padding` on `.bricks-button:where(.xl)` |
+| `sizeXlTypography` | typography | Typography | `font` on `.bricks-button:where(.xl)` |
 
 ### Carousel
 
@@ -251,15 +261,25 @@ Theme style controls for the "container" section.
 
 | Key | Type | Label | CSS |
 |---|---|---|---|
-| `_display` | select | Display | `display` on `.brxe-container` |
+| `_display` | select | Display | `display` on `.brxe-container`, `align-items` on `.brxe-container` |
+| `_gridGap` | number | Gap | `gap` on `.brxe-container` |
+| `_columnGap` | number | Column gap | `column-gap` on `.brxe-container` |
+| `_rowGap` | number | Row gap | `row-gap` on `.brxe-container` |
+| `_gridTemplateColumns` | text | Grid template columns | `grid-template-columns` on `.brxe-container` |
+| `_gridTemplateRows` | text | Grid template rows | `grid-template-rows` on `.brxe-container` |
+| `_gridAutoColumns` | text | Grid auto columns | `grid-auto-columns` on `.brxe-container` |
+| `_gridAutoRows` | text | Grid auto rows | `grid-auto-rows` on `.brxe-container` |
+| `_gridAutoFlow` | select | Grid auto flow | `grid-auto-flow` on `.brxe-container` |
+| `_justifyItemsGrid` | justify-content | Justify items | `justify-items` on `.brxe-container` |
+| `_alignItemsGrid` | align-items | Align items | `align-items` on `.brxe-container` |
+| `_justifyContentGrid` | justify-content | Justify content | `justify-content` on `.brxe-container` |
+| `_alignContentGrid` | align-items | Align content | `align-content` on `.brxe-container` |
 | `_direction` | direction | Direction | `flex-direction` on `.brxe-container` |
 | `_justifyContent` | justify-content | Align main axis | `justify-content` on `.brxe-container` |
 | `_alignItems` | align-items | Align cross axis | `align-items` on `.brxe-container` |
 | `width` | number | Width | `width` on `.brxe-container`, `width` on `.woocommerce main.site-main`, `width` on `#brx-content.wordpress` |
 | `widthMin` | number | Min. width | `min-width` on `.brxe-container`, `min-width` on `#brx-content.wordpress` |
 | `widthMax` | number | Max. width | `max-width` on `.brxe-container`, `max-width` on `#brx-content.wordpress` |
-| `_columnGap` | number | Column gap | `column-gap` on `.brxe-container` |
-| `_rowGap` | number | Row gap | `row-gap` on `.brxe-container` |
 | `margin` | spacing | Margin | `margin` on `.brxe-container` |
 | `padding` | spacing | Padding | `padding` on `.brxe-container` |
 
@@ -323,15 +343,25 @@ Theme style controls for the "div" section.
 
 | Key | Type | Label | CSS |
 |---|---|---|---|
-| `_display` | select | Display | `display` on `.brxe-div:where(:not(.brx-dropdown-content))` |
+| `_display` | select | Display | `display` on `.brxe-div:where(:not(.brx-dropdown-content))`, `align-items` on `.brxe-div:where(:not(.brx-dropdown-content))` |
+| `_gridGap` | number | Gap | `gap` on `.brxe-div:where(:not(.brx-dropdown-content))` |
+| `_columnGap` | number | Column gap | `column-gap` on `.brxe-div` |
+| `_rowGap` | number | Row gap | `row-gap` on `.brxe-div` |
+| `_gridTemplateColumns` | text | Grid template columns | `grid-template-columns` on `.brxe-div:where(:not(.brx-dropdown-content))` |
+| `_gridTemplateRows` | text | Grid template rows | `grid-template-rows` on `.brxe-div:where(:not(.brx-dropdown-content))` |
+| `_gridAutoColumns` | text | Grid auto columns | `grid-auto-columns` on `.brxe-div:where(:not(.brx-dropdown-content))` |
+| `_gridAutoRows` | text | Grid auto rows | `grid-auto-rows` on `.brxe-div:where(:not(.brx-dropdown-content))` |
+| `_gridAutoFlow` | select | Grid auto flow | `grid-auto-flow` on `.brxe-div:where(:not(.brx-dropdown-content))` |
+| `_justifyItemsGrid` | justify-content | Justify items | `justify-items` on `.brxe-div:where(:not(.brx-dropdown-content))` |
+| `_alignItemsGrid` | align-items | Align items | `align-items` on `.brxe-div:where(:not(.brx-dropdown-content))` |
+| `_justifyContentGrid` | justify-content | Justify content | `justify-content` on `.brxe-div:where(:not(.brx-dropdown-content))` |
+| `_alignContentGrid` | align-items | Align content | `align-content` on `.brxe-div:where(:not(.brx-dropdown-content))` |
 | `_direction` | direction | Direction | `flex-direction` on `.brxe-div` |
 | `_justifyContent` | justify-content | Align main axis | `justify-content` on `.brxe-div` |
 | `_alignItems` | align-items | Align cross axis | `align-items` on `.brxe-div` |
 | `width` | number | Width | `width` on `.brxe-div` |
 | `widthMin` | number | Min. width | `min-width` on `.brxe-div` |
 | `widthMax` | number | Max. width | `max-width` on `.brxe-div` |
-| `_columnGap` | number | Column gap | `column-gap` on `.brxe-div` |
-| `_rowGap` | number | Row gap | `row-gap` on `.brxe-div` |
 | `margin` | spacing | Margin | `margin` on `.brxe-div` |
 | `padding` | spacing | Padding | `padding` on `.brxe-div` |
 
@@ -715,15 +745,25 @@ Theme style controls for the "section" section.
 
 | Key | Type | Label | CSS |
 |---|---|---|---|
-| `_display` | select | Display | `display` on `.brxe-section` |
+| `_display` | select | Display | `display` on `.brxe-section`, `align-items` on `.brxe-section` |
+| `_gridGap` | number | Gap | `gap` on `.brxe-section` |
+| `_columnGap` | number | Column gap | `column-gap` on `.brxe-section` |
+| `_rowGap` | number | Row gap | `row-gap` on `.brxe-section` |
+| `_gridTemplateColumns` | text | Grid template columns | `grid-template-columns` on `.brxe-section` |
+| `_gridTemplateRows` | text | Grid template rows | `grid-template-rows` on `.brxe-section` |
+| `_gridAutoColumns` | text | Grid auto columns | `grid-auto-columns` on `.brxe-section` |
+| `_gridAutoRows` | text | Grid auto rows | `grid-auto-rows` on `.brxe-section` |
+| `_gridAutoFlow` | select | Grid auto flow | `grid-auto-flow` on `.brxe-section` |
+| `_justifyItemsGrid` | justify-content | Justify items | `justify-items` on `.brxe-section` |
+| `_alignItemsGrid` | align-items | Align items | `align-items` on `.brxe-section` |
+| `_justifyContentGrid` | justify-content | Justify content | `justify-content` on `.brxe-section` |
+| `_alignContentGrid` | align-items | Align content | `align-content` on `.brxe-section` |
 | `_direction` | direction | Direction | `flex-direction` on `.brxe-section` |
 | `_justifyContent` | justify-content | Align main axis | `justify-content` on `.brxe-section` |
 | `_alignItems` | align-items | Align cross axis | `align-items` on `.brxe-section` |
 | `width` | number | Width | `width` on `.brxe-section` |
 | `widthMin` | number | Min. width | `min-width` on `.brxe-section` |
 | `widthMax` | number | Max. width | `max-width` on `.brxe-section` |
-| `_columnGap` | number | Column gap | `column-gap` on `.brxe-section` |
-| `_rowGap` | number | Row gap | `row-gap` on `.brxe-section` |
 | `margin` | spacing | Margin | `margin` on `.brxe-section` |
 | `padding` | spacing | Padding | `padding` on `.brxe-section` |
 
@@ -765,7 +805,7 @@ Theme style controls for the "slider" section. Default CSS selector: .brxe-slide
 | `buttonBoxshadow` | box-shadow | Box shadow | `box-shadow` on `.bricks-button` |
 | `buttonTypography` | typography | Button typography | `color` on `.bricks-button` |
 | `backgroundFilters` | filters | CSS Filters | `filter` on `.css-filter` |
-| `backgroundPositionTop` | number | Top | `top` on `.image` |
+| `backgroundPositionTop` | number | backgroundPositionTop | `top` on `.image` |
 | `backgroundPositionRight` | number | Right | `right` on `.image` |
 | `backgroundPositionBottom` | number | Bottom | `bottom` on `.image` |
 | `backgroundPositionLeft` | number | Left | `left` on `.image` |

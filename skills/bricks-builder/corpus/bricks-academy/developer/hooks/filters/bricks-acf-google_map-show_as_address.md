@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/developer/hooks/filters/bricks-ac
 pageType: "article"
 section: "developer"
 category: "hooks"
-lastmod: "2026-08-20T13:12:40.000Z"
+lastmod: "2026-09-16T10:41:20.000Z"
 ---
 Determines whether the ACF Google Map field dynamic data should be rendered as a formatted address or as latitude/longitude coordinates.
 

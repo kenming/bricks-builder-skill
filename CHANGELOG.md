@@ -2,6 +2,25 @@
 
 ## Unreleased
 
+## v1.1.0 - 2026-09-20
+
+### Added
+
+- Added a Bricks 2.4+ AI Abilities workflow covering runtime discovery,
+  permission-aware preview/apply operations, verification, revisions, global
+  data backups, and PHP execution boundaries.
+- Added Academy documentation for Bricks 2.4 AI Abilities, Builder and Media
+  Browser features, WooCommerce advanced modular elements, new File and Form
+  Checkbox schemas, and the expanded WooCommerce v2 schema set.
+
+### Changed
+
+- Refreshed the Academy snapshot to the 2026-09-20 metadata baseline with
+  `824` documents, `632` local images, and `51` external embeds.
+- Updated the development route to prefer authorized Bricks Abilities runtime
+  schemas and preview/apply workflows over direct storage mutation when those
+  operations are available.
+
 ## v1.0.2 - 2026-08-23
 
 ### Added

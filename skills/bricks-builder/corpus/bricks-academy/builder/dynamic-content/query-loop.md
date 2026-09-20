@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/builder/dynamic-content/query-loo
 pageType: "article"
 section: "builder"
 category: "dynamic-content"
-lastmod: "2026-08-20T13:12:40.000Z"
+lastmod: "2026-09-16T10:41:20.000Z"
 ---
 https://www.youtube.com/watch?v=LxrLROitgn8
 
@@ -77,6 +77,12 @@ The **Query** control supports five built-in query types: `posts`, `terms`, `use
 - **Array** lets you render items from PHP or JSON-style array data. See [Query Type: Array](#array) below.
 
 The query controls adapt according to the selected query type.
+
+### ACF Repeater source context
+
+An ACF Repeater query uses the active post or query context to retrieve its rows. If the repeater field is assigned to an ACF Options Page, Bricks retrieves the rows from that options page instead.
+
+Selecting an ACF Repeater query does not store or provide a control for an arbitrary source post or page ID. For repeatable data shared across pages, assign the field to an ACF Options Page. To retrieve rows from a specific different post or page, use custom PHP or a custom query or dynamic-data solution that passes the required ACF source post ID. See [Dynamic Data](/builder/dynamic-content/dynamic-data/) for ACF field support in Bricks.
 
 ## Query editor (PHP) {#query-editor}
 
@@ -603,6 +609,41 @@ function my_custom_array() {
   ];
 }
 ```
+
+#### Use Case 3: Render ACF Checkbox Choices as a List
+
+An ACF Checkbox field returns its selected choices as an array. Use that array as the query source to render each choice as a separate list item without custom PHP.
+
+The pattern is not limited to ACF Checkbox fields. Enter any dynamic-data tag that returns a flat array in the **Array Editor**. Bricks creates one loop item for each array value, and `{query_array}` outputs the current value inside the loop.
+
+When you insert `{acf_FIELD_NAME}` directly into a text field, Bricks joins all selected choices into one string with a comma and space between each choice. There is no builder setting for this separator. Changing it requires the [`bricks/dynamic_data/text_separator`](/developer/hooks/filters/bricks-dynamic_data-text_separator/) PHP hook.
+
+The Array query approach keeps every selected choice as a separate loop item. This gives you semantic list markup and lets you style or add content to each choice independently without changing the separator in PHP.
+
+Use **Div** elements for both levels of the list. A Block uses `display: flex` by default, which overrides the browser's normal `ul`, `ol`, or `li` display behavior and can remove list markers. A Div has no default layout styles, so the semantic list elements retain their normal display behavior.
+
+1. Add a **Div** for the list container. Set its **HTML tag** to `ul`, or use `ol` when the order of the choices matters. Leave **Use Query Loop** disabled on this parent element.
+2. Add another **Div** inside the list container and set its **HTML tag** to `li`.
+3. Enable **Use Query Loop** on the `li` element. Open its **Query** control, set **Type** to **Array**, and enter `{acf_FIELD_NAME}` in the **Array Editor**. Replace `FIELD_NAME` with the Checkbox field name.
+4. Add a **Basic Text** element inside the `li` and set its content to `{query_array}`.
+
+The parent `ul` or `ol` renders once. The child `li` is the loop element, so Bricks repeats it for every selected checkbox choice. If the field contains "Breakfast included", "Parking", and "Wi-Fi", the visible result is:
+
+- Breakfast included
+- Parking
+- Wi-Fi
+
+The ACF field's **Return Format** determines what the loop receives:
+
+- **Label** outputs the choice labels.
+- **Value** outputs the stored choice values.
+- **Both (Array)** outputs labels by default in Bricks. Use `{acf_FIELD_NAME:value}` in the **Array Editor** when you need the stored values instead. The `:value` modifier is not needed when the field already uses the **Value** return format.
+
+Use the **Style** tab on the parent list element for list-wide spacing and indentation. Style the looping `li` element to apply the same typography, spacing, background, or border to every repeated item.
+
+For nested or associative arrays, use the `{query_array @key:'keyName'}` syntax described below.
+
+![Bricks Structure and Array query settings for rendering ACF Checkbox selections as an ordered list.](imgs/acf-checkbox-array-query-use-case-1dc777224b.webp)
 
 ### Dynamic Data Tag: `{query_array}`
 

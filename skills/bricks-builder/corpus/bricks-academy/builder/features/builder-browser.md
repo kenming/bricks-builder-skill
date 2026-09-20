@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/builder/features/builder-browser.
 pageType: "article"
 section: "builder"
 category: "features"
-lastmod: "2026-08-20T13:12:40.000Z"
+lastmod: "2026-09-16T10:41:20.000Z"
 ---
 The **Builder Browser**, introduced in Bricks 2.4, is the folder popup in the builder toolbar. It brings templates, components, public post types, media, and builder managers into one browser-style popup.
 
@@ -123,6 +123,14 @@ For regular post types, you can:
 The post type settings button lets you set **Posts per page** and toggle visible metadata such as author and date.
 
 By default, regular post types use the WordPress **posts per page** value. If that value is missing, Bricks falls back to `10`. You can override the Browser value per post type, from `1` to `100`.
+
+### Organize posts and pages with folders
+
+In Bricks 2.4, Browser folders also work with posts, pages, and custom post types when a compatible folder integration supports that post type. The included HappyFiles integration uses the folders already configured in HappyFiles.
+
+Enable the relevant post type in HappyFiles and give your user folder access. Open that post type in the Browser to browse its folders and uncategorized items. Drag an item or a selection into a folder to assign it.
+
+Assigning existing items requires full folder access in HappyFiles, permission to edit that post type, and permission to edit each selected item. Folder management also requires full folder access. If a post type has no folders in the Browser, check that it is enabled in HappyFiles and that your user has access.
 
 ## Media
 

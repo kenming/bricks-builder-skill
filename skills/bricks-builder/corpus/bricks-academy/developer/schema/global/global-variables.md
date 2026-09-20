@@ -1,12 +1,12 @@
 ---
 title: "Global Variables Schema"
-description: "Reference for the Bricks Global Variables schema, including the exported structure and top-level properties used in global settings."
+description: "Documentation for Global Variables Schema in Bricks Academy."
 canonical: "https://academy.bricksbuilder.io/developer/schema/global/global-variables/"
 markdownUrl: "https://academy.bricksbuilder.io/developer/schema/global/global-variables.md"
 pageType: "article"
 section: "developer"
 category: "schema"
-lastmod: "2026-08-20T13:12:40.000Z"
+lastmod: "2026-09-16T10:41:20.000Z"
 ---
 import SchemaJson from '../../../../../components/SchemaJson.astro'
 

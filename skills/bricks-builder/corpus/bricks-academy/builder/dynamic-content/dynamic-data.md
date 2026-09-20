@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/builder/dynamic-content/dynamic-d
 pageType: "article"
 section: "builder"
 category: "dynamic-content"
-lastmod: "2026-08-20T13:12:40.000Z"
+lastmod: "2026-09-16T10:41:20.000Z"
 ---
 Use dynamic data to render all sorts of data from your WordPress database with Bricks.
 

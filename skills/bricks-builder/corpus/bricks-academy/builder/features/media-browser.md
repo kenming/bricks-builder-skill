@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/builder/features/media-browser.md
 pageType: "article"
 section: "builder"
 category: "features"
-lastmod: "2026-08-20T13:12:40.000Z"
+lastmod: "2026-09-16T10:41:20.000Z"
 ---
 The **Media Browser**, introduced in Bricks 2.4, adds media selection and management to the [Builder Browser](/builder/features/builder-browser/). It works with attachments in the WordPress Media Library, so files uploaded or edited in either interface remain available in both.
 
@@ -179,6 +179,8 @@ The available checks are:
 - **Oversized files**: Original files above the configured threshold for their media type.
 - **Obsolete formats**: Files whose extensions match the configured list.
 
+If an offload service removes local originals, its integration can use the [`bricks/media_browser/health/file_status` filter](/developer/hooks/filters/bricks-media-browser-health-file-status/) to classify file availability. This changes the health status check; it does not download remote files or make local repair actions available.
+
 Select an issue to inspect the attachment and use the available resolution:
 
 - Add alternative text, mark the image decorative, or ignore the missing-alt finding.
@@ -188,7 +190,15 @@ Select an issue to inspect the attachment and use the available resolution:
 - Replace or relink a broken file, then recheck it.
 - Ignore a finding and restore it later if no change is required.
 
-File replacement preserves the attachment ID and attachment metadata. Replacing, relinking, optimizing, or converting an attachment can affect every location that uses it, so Bricks shows detected usage before applying the change. Some image actions can create a new attachment instead of replacing the original.
+File replacement preserves the attachment ID and editorial metadata, such as title, caption, and alternative text. Replacing, relinking, or optimizing an attachment can affect every location that uses it, so Bricks shows detected usage before applying the change.
+
+### Preserve file URLs during repairs
+
+An in-place repair must preserve the attachment's current upload path and file URL. Choose a replacement in the same compatible format as the original. For example, replacing a JPEG with another JPEG can preserve its URL; replacing it with a WebP file would require a different extension and is blocked.
+
+The same restriction applies to relinking, optimization, and conversion. Bricks rejects an in-place action that changes the upload path, even if the usage check finds no references. Stored URLs in content or external systems may be outside that check.
+
+For a format conversion, use a copy action when offered to create a separate attachment, then select that attachment in the locations that should use it. Otherwise, upload the new file as a separate attachment. Creating a copy does not update existing references to the original.
 
 ![](imgs/media-browser-media-health-43c3499d77.webp)
 

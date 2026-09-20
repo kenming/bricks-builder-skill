@@ -37,12 +37,13 @@ The Academy corpus and index are generated synchronization products. Development
 - Develop custom elements safely in a child theme or plugin.
 - Work with responsive settings, Theme Styles, global classes, variables, and components.
 - Route Dynamic Data, Query Loop, Forms, and hook work through the correct public and active-version sources.
+- Use Bricks 2.4+ AI Abilities through permission-aware discovery, preview, apply, and verification workflows when an authorized connection is available.
 - Validate changes in the Builder and on the frontend.
 
 ## Current Academy snapshot
 
-- `768` synchronized documentation pages
-- `631` downloaded local images
+- `824` synchronized documentation pages
+- `632` downloaded local images
 - `51` external embeds preserved as links
 
 These numbers change as the official documentation evolves.

@@ -6,11 +6,11 @@ markdownUrl: "https://academy.bricksbuilder.io/developer/schema/elements/common/
 pageType: "article"
 section: "developer"
 category: "schema"
-lastmod: "2026-08-20T13:12:40.000Z"
+lastmod: "2026-09-16T10:41:20.000Z"
 ---
 import SchemaJson from '../../../../../../components/SchemaJson.astro'
 
-Every element in Bricks uses the same envelope structure, regardless of type. Element-specific controls are documented on each element's schema page; content areas (the flat arrays that hold elements) are documented in the [content area schema](/developer/schema/general/content-area/).
+Every element in Bricks uses the same envelope structure, regardless of type. Element-specific controls are documented in each [individual element schema](../../elements/accordion/); content areas (the flat arrays that hold elements) are documented in the [content area schema](../../general/content-area/).
 
 <SchemaJson path="elements/common/element.json" />
 
@@ -39,11 +39,11 @@ The `settings` object combines three layers of keys:
 
 ## Meta-settings
 
-These keys can appear in any element's `settings` object. They are not included in per-element schemas to avoid duplication across 130+ elements.
+These keys can appear in any element's `settings` object. They are not included in per-element schemas to avoid duplication across 182+ elements.
 
 ### `_cssGlobalClasses`
 
-Array of global class IDs applied to this element. Each ID references a global class defined in the [global classes](/developer/schema/global/global-classes/) data.
+Array of global class IDs applied to this element. Each ID references a global class defined in the [global classes](../../global/global-classes/) data.
 
 ```json
 "_cssGlobalClasses": ["mmdqed", "xkatss"]
@@ -157,7 +157,7 @@ The `selectors` array allows scoping control settings to arbitrary CSS selectors
 
 ## How this relates to individual element schemas
 
-Each element schema (e.g. [button](/developer/schema/elements/button/), [heading](/developer/schema/elements/heading/)) documents the element-specific and inherited CSS controls that go into the `settings` object. The envelope fields (`id`, `name`, `parent`, `children`, `selectors`, `label`, `themeStyles`) and meta-settings (`_cssGlobalClasses`, `_conditions`, `_interactions`, etc.) documented on this page apply identically to every element type.
+Each element schema (e.g. [button](../../elements/button/), [heading](../../elements/heading/)) documents the element-specific and inherited CSS controls that go into the `settings` object. The envelope fields (`id`, `name`, `parent`, `children`, `selectors`, `label`, `themeStyles`) and meta-settings (`_cssGlobalClasses`, `_conditions`, `_interactions`, etc.) documented on this page apply identically to every element type.
 
 To construct a complete element, combine:
 1. The envelope fields from this page

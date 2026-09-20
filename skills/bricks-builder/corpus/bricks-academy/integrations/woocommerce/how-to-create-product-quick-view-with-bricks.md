@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/integrations/woocommerce/how-to-c
 pageType: "article"
 section: "integrations"
 category: "woocommerce"
-lastmod: "2026-08-20T13:12:40.000Z"
+lastmod: "2026-09-16T10:41:20.000Z"
 ---
 ## Step 1: Design a Popup Template for Quick View
 

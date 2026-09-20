@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/developer/schema/elements/product
 pageType: "article"
 section: "developer"
 category: "schema"
-lastmod: "2026-08-20T13:12:40.000Z"
+lastmod: "2026-09-16T10:41:20.000Z"
 ---
 import SchemaJson from '../../../../../components/SchemaJson.astro'
 
@@ -32,7 +32,7 @@ import SchemaJson from '../../../../../components/SchemaJson.astro'
 | `variationsPriceTypography` | typography | Price typography | `font` on `.woocommerce-variation-price` |
 | `variationsRegularPriceTypography` | typography | Regular price typography | `font` on `.woocommerce-variation-price .price del, .woocommerce-variation-price .price > span` |
 | `variationsSalePriceTypography` | typography | Sale price typography | `font` on `.woocommerce-variation-price .price ins` |
-| `swatchesWrap` | select | Wrap | `flex-wrap` on `.bricks-variation-swatches` |
+| `swatchesWrap` | select | swatchesWrap | `flex-wrap` on `.bricks-variation-swatches` |
 | `swatchesDirection` | direction | Direction | `flex-direction` on `.bricks-variation-swatches` |
 | `swatchesJustifyContent` | justify-content | Align main axis | `justify-content` on `.bricks-variation-swatches` |
 | `swatchesAlignItems` | align-items | Align cross axis | `align-items` on `.bricks-variation-swatches` |
@@ -132,12 +132,12 @@ Shared CSS controls available on all elements. Keys are prefixed with `_` and su
 | `_heightMax` | number | Max. height | `max-height` |
 | `_aspectRatio` | text | Aspect ratio | `aspect-ratio` |
 | `_position` | select | Position | `position` |
-| `_top` | number | Top | `top` |
+| `_top` | number | _top | `top` |
 | `_right` | number | Right | `right` |
 | `_bottom` | number | Bottom | `bottom` |
 | `_left` | number | Left | `left` |
 | `_zIndex` | number | Z-index | `z-index` |
-| `_order` | number | Order | `order` |
+| `_order` | number | _order | `order` |
 | `_display` | select | Display | `display`, `align-items` |
 | `_visibility` | select | Visibility | `visibility` |
 | `_overflow` | text | Overflow | `overflow` |

@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/integrations/gutenberg/components
 pageType: "article"
 section: "integrations"
 category: "gutenberg"
-lastmod: "2026-08-20T13:12:40.000Z"
+lastmod: "2026-09-16T10:41:20.000Z"
 ---
 https://youtu.be/tgpjMcZaLNc
 

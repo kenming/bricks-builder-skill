@@ -3,16 +3,16 @@ title: "Bricks Data Model"
 description: "How Bricks stores and structures data: elements, content areas, page/template settings, and global data structures."
 canonical: "https://academy.bricksbuilder.io/developer/schema/"
 markdownUrl: "https://academy.bricksbuilder.io/developer/schema.md"
-pageType: "hub"
+pageType: "article"
 section: "developer"
 category: "schema"
-lastmod: "2026-08-20T13:12:40.000Z"
+lastmod: "2026-09-16T10:41:20.000Z"
 ---
 import SchemaDownload from '../../../../components/SchemaDownload.astro'
 
 This page explains how Bricks structures its data. Use it alongside the individual element and control schemas to understand or generate valid Bricks content. Each JSON file describes the exact shape of data Bricks reads and writes, so AI coding assistants, build tools, import/export scripts, and custom integrations can generate, validate, or transform Bricks content without the builder UI.
 
-**Schema version:** 2.3
+**Schema version:** 2.4
 
 <SchemaDownload />
 
@@ -413,7 +413,7 @@ section (Hero Section 06)
 
 ### [Elements](./elements/accordion/)
 
-Individual element schemas describing the settings, metadata, and value types for each element type. 130 element schemas available.
+Individual element schemas describing the settings, metadata, and value types for each element type. 182 element schemas available.
 
 #### [Common](./elements/common/element/)
 

@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/developer/schema/elements/form.md
 pageType: "article"
 section: "developer"
 category: "schema"
-lastmod: "2026-08-20T13:12:40.000Z"
+lastmod: "2026-09-16T10:41:20.000Z"
 ---
 import SchemaJson from '../../../../../components/SchemaJson.astro'
 
@@ -23,7 +23,7 @@ import SchemaJson from '../../../../../components/SchemaJson.astro'
 
 | Key | Type | Label | CSS |
 |---|---|---|---|
-| `fields` | repeater | Type | `font` on `.password-toggle .show-password i` |
+| `fields` | repeater | Set options as %s | `font` on `.password-toggle .show-password i` |
 | `requiredAsterisk` | checkbox | Show required asterisk | — |
 | `disableRequiredAsteriskInPlaceholder` | checkbox | Disable required asterisk in placeholder | — |
 | `showLabels` | checkbox | Show labels | — |
@@ -46,9 +46,11 @@ import SchemaJson from '../../../../../components/SchemaJson.astro'
 | `submitButtonTypography` | typography | Typography | `font` on `.bricks-button` |
 | `submitButtonBackgroundColor` | color | Background | `background-color` on `.bricks-button` |
 | `submitButtonBorder` | border | Border | `border` on `button[type=submit].bricks-button` |
-| `submitButtonIcon` | icon | Icon | — |
+| `submitButtonIcon` | icon | Icon | `—` on `button[type=submit] svg` |
+| `submitButtonAriaLabel` | text | aria-label | — |
 | `submitButtonIconPosition` | select | Icon position | — |
 | `actions` | select | Actions after successful form submit | — |
+| `actionConditions` | repeater | Action conditions | — |
 | `successMessage` | text | Success message | — |
 | `noticeCloseAfter` | number | Close after | — |
 | `noticeCloseButton` | checkbox | Close button | — |
@@ -131,6 +133,10 @@ import SchemaJson from '../../../../../components/SchemaJson.astro'
 | `enableTurnstile` | checkbox | Turnstile (Cloudflare) | — |
 | `turnstileSize` | select | Turnstile:  | — |
 | `turnstileTheme` | select | Turnstile:  | — |
+| `turnstileInitialization` | select | Turnstile:  | — |
+| `turnstileViewportDistance` | number | Viewport distance | — |
+| `turnstileExecution` | select | Turnstile:  | — |
+| `turnstileAppearance` | select | Turnstile:  | — |
 | `turnstileLabel` | text | Turnstile:  | — |
 | `enableHCaptcha` | select | hCaptcha | — |
 | `hCaptchaSize` | select | hCaptcha:  | — |
@@ -161,12 +167,12 @@ Shared CSS controls available on all elements. Keys are prefixed with `_` and su
 | `_heightMax` | number | Max. height | `max-height` |
 | `_aspectRatio` | text | Aspect ratio | `aspect-ratio` |
 | `_position` | select | Position | `position` |
-| `_top` | number | Top | `top` |
+| `_top` | number | _top | `top` |
 | `_right` | number | Right | `right` |
 | `_bottom` | number | Bottom | `bottom` |
 | `_left` | number | Left | `left` |
 | `_zIndex` | number | Z-index | `z-index` |
-| `_order` | number | Order | `order` |
+| `_order` | number | _order | `order` |
 | `_display` | select | Display | `display`, `align-items` |
 | `_visibility` | select | Visibility | `visibility` |
 | `_overflow` | text | Overflow | `overflow` |

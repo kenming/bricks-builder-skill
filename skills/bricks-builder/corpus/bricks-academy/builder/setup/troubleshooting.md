@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/builder/setup/troubleshooting.md"
 pageType: "article"
 section: "builder"
 category: "setup"
-lastmod: "2026-08-20T13:12:40.000Z"
+lastmod: "2026-09-16T10:41:20.000Z"
 ---
 A website built with Bricks depends on more than Bricks itself. WordPress, plugins, custom code, your browser, caching, a CDN, the web server, PHP, and the database can all affect what you see.
 

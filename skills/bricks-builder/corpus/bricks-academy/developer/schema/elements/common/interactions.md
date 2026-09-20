@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/developer/schema/elements/common/
 pageType: "article"
 section: "developer"
 category: "schema"
-lastmod: "2026-08-20T13:12:40.000Z"
+lastmod: "2026-09-16T10:41:20.000Z"
 ---
 import SchemaJson from '../../../../../../components/SchemaJson.astro'
 
@@ -45,8 +45,7 @@ These properties apply depending on the chosen action:
 | `scrollToDelay` | string | `scrollTo` (delay before scrolling) |
 | `scrollToOffset` | string | `scrollTo` (scroll offset in pixels) |
 | `scrollOffset` | string | `scroll` trigger (scroll position threshold) |
-| `rootMargin` | string | `enterView` (IntersectionObserver root margin) |
-| `visibilityThreshold` | number | `enterView`/`leaveView` (visible percentage from `0` to `100`) |
+| `rootMargin` | string | `enterView`/`leaveView` (IntersectionObserver root margin) |
 | `templateId` | string | Template ID reference |
 | `formId` | string | Form element ID |
 | `ajaxQueryId` | string | AJAX query element ID |
@@ -83,7 +82,6 @@ These properties apply depending on the chosen action:
       "action": "show",
       "target": "self",
       "rootMargin": "0px 0px -100px 0px",
-      "visibilityThreshold": 50,
       "runOnce": true
     }
   ]
@@ -104,8 +102,6 @@ These properties apply depending on the chosen action:
 - `animationEnd`
 - `ajaxStart`
 - `ajaxEnd`
-- `filterSubmitStart`
-- `filterSubmitEnd`
 - `formSubmit`
 - `formSuccess`
 - `formError`
@@ -141,6 +137,7 @@ Popup templates have two additional triggers (`showPopup`, `hidePopup`) availabl
 | `toggleAttribute` | Toggle an HTML attribute |
 | `toggleOffCanvas` | Toggle an offcanvas panel |
 | `loadMore` | Load more items (query loop) |
+| `loadMoreGallery` | loadMoreGallery |
 | `startAnimation` | Start a CSS animation |
 | `scrollTo` | Scroll to an element |
 | `javascript` | Execute a custom JavaScript function |
@@ -168,6 +165,7 @@ Each interaction can optionally include sub-conditions that must be met before t
 | `storageCompare` | string | Comparison operator for storage value |
 | `storageCompareValue` | any | Value to compare storage against |
 | `storageKey` | any | Browser storage key to check |
+| `id` | string,integer | id |
 
 ### Example with sub-conditions
 

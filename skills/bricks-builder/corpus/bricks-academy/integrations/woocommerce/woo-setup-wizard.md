@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/integrations/woocommerce/woo-setu
 pageType: "article"
 section: "integrations"
 category: "woocommerce"
-lastmod: "2026-08-20T13:12:40.000Z"
+lastmod: "2026-09-16T10:41:20.000Z"
 ---
 The Woo Setup Wizard helps you check, create, and repair the main WooCommerce layouts used by Bricks.
 
@@ -72,7 +72,7 @@ Common checks include:
 - Assigned page is still edited with the WordPress editor instead of Bricks.
 - Assigned page contains WooCommerce block content.
 - Required v2 parent element is missing from the assigned page.
-- Required v2 states are missing.
+- Required v2 states are missing. My Account v2 includes Order withdrawal only when the WooCommerce feature is enabled.
 - Required v2 state elements are empty.
 - Existing published WooCommerce templates may conflict with the selected setup.
 - Classic setup is missing expected WooCommerce shortcodes or template types.
@@ -113,7 +113,7 @@ Open the generated page or template in Bricks and review the result.
 - For Cart v2, review the Filled cart and Empty cart states.
 - For Checkout v2, review Checkout, Login required, Pay, Thank you, and Order receipt states.
 - For Advanced multistep Checkout v2, test the checkout step navigation and interactions.
-- For Account Page v2, review the account navigation, login, password, address, order, download, and edit account states.
+- For Account Page v2, review the account navigation, login, password, address, order, download, and edit account states. Include Order withdrawal when enabled.
 - Test the live Cart, Checkout, and My Account flows with WooCommerce products and customer sessions.
 
 ## Related docs

@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/integrations/woocommerce/advanced
 pageType: "article"
 section: "integrations"
 category: "woocommerce"
-lastmod: "2026-08-20T13:12:40.000Z"
+lastmod: "2026-09-16T10:41:20.000Z"
 ---
 Starting in Bricks 2.4, the WooCommerce integration includes an advanced modular workflow for the store areas that usually require the most setup: Cart, Checkout, and My Account.
 
@@ -86,7 +86,7 @@ Bricks 2.4 registers these advanced modular support elements:
 | --- | --- |
 | Cart v2 | Cart form, Cart quantity |
 | Checkout v2 | Checkout steps navigation, Checkout step nav item, Checkout step, Shipping options, Payment options, WooCommerce form field, WooCommerce form submit, Checkout account fields, Checkout billing address, Checkout shipping address, Checkout order summary, Checkout place order |
-| Account Page v2 | WooCommerce login form, Account register form, Account lost password form, Account reset password form, Account orders pagination, Account edit address form, Account edit account form |
+| Account Page v2 | WooCommerce login form, Account register form, Account lost password form, Account reset password form, Account orders pagination, Account edit address form, Account edit account form, Account order withdrawal form (when Order Withdrawal is enabled) |
 | Cart-dependent content | Dynamic fragment |
 
 Some support elements are generated-only. Create them through **Insert a structure** or the [Woo Setup Wizard](/integrations/woocommerce/woo-setup-wizard/), then edit them from the Structure panel.
@@ -139,6 +139,7 @@ It includes states for the common My Account endpoints:
 - Lost password
 - Lost password confirmation
 - Reset password
+- Order withdrawal (WooCommerce 11.1 or later, with Order Withdrawal enabled)
 
 Use the **State** control to switch between endpoint previews while editing. Each state can contain generated starter content that you can customize in the builder.
 

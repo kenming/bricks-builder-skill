@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/developer/schema/elements/text-li
 pageType: "article"
 section: "developer"
 category: "schema"
-lastmod: "2026-08-20T13:12:40.000Z"
+lastmod: "2026-09-16T10:41:20.000Z"
 ---
 import SchemaJson from '../../../../../components/SchemaJson.astro'
 
@@ -25,13 +25,13 @@ import SchemaJson from '../../../../../components/SchemaJson.astro'
 |---|---|---|---|
 | `text` | text | text | — |
 | `link` | link | Link to | — |
-| `icon` | icon | Icon | `—` on `.icon > svg` |
-| `iconSize` | number | Size | `font-size` on `.icon > i`, `width` on `.icon > svg`, `height` on `.icon > svg` |
-| `iconWidth` | number | Width | `width` on `.icon` |
-| `iconHeight` | number | Height | `height` on `.icon` |
-| `iconColor` | color | Color | `color` on `.icon`, `fill` on `.icon` |
-| `iconBackground` | color | Background color | `background-color` on `.icon` |
-| `iconBorder` | border | Border | `border` on `.icon`, `overflow` on `.icon` |
+| `icon` | icon | Icon | `—` on `&\{pseudo\} .icon > svg` |
+| `iconSize` | number | Size | `font-size` on `&\{pseudo\} .icon > i`, `width` on `&\{pseudo\} .icon > svg`, `height` on `&\{pseudo\} .icon > svg` |
+| `iconWidth` | number | Width | `width` on `&\{pseudo\} .icon` |
+| `iconHeight` | number | Height | `height` on `&\{pseudo\} .icon` |
+| `iconColor` | color | Color | `color` on `&\{pseudo\} .icon`, `fill` on `&\{pseudo\} .icon` |
+| `iconBackground` | color | Background color | `background-color` on `&\{pseudo\} .icon` |
+| `iconBorder` | border | Border | `border` on `&\{pseudo\} .icon`, `overflow` on `&\{pseudo\} .icon` |
 | `iconPosition` | select | Position | `flex-direction` |
 | `gap` | number | Gap | `gap` |
 
@@ -52,12 +52,12 @@ Shared CSS controls available on all elements. Keys are prefixed with `_` and su
 | `_heightMax` | number | Max. height | `max-height` |
 | `_aspectRatio` | text | Aspect ratio | `aspect-ratio` |
 | `_position` | select | Position | `position` |
-| `_top` | number | Top | `top` |
+| `_top` | number | _top | `top` |
 | `_right` | number | Right | `right` |
 | `_bottom` | number | Bottom | `bottom` |
 | `_left` | number | Left | `left` |
 | `_zIndex` | number | Z-index | `z-index` |
-| `_order` | number | Order | `order` |
+| `_order` | number | _order | `order` |
 | `_display` | select | Display | `display`, `align-items` |
 | `_visibility` | select | Visibility | `visibility` |
 | `_overflow` | text | Overflow | `overflow` |

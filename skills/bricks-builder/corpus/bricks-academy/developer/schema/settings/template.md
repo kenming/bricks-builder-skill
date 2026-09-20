@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/developer/schema/settings/templat
 pageType: "article"
 section: "developer"
 category: "schema"
-lastmod: "2026-08-20T13:12:40.000Z"
+lastmod: "2026-09-16T10:41:20.000Z"
 ---
 import SchemaJson from '../../../../../components/SchemaJson.astro'
 
@@ -36,7 +36,7 @@ import SchemaJson from '../../../../../components/SchemaJson.astro'
 | `popupAjaxLoaderAnimation` | select | Animation |
 | `popupAjaxLoaderColor` | color | Color |
 | `popupAjaxLoaderScale` | number | Scale |
-| `popupAjaxLoaderSelector` | text | CSS Selector |
+| `popupAjaxLoaderSelector` | text | CSS selector |
 | `popupAlignItems` | align-items | Align cross axis |
 | `popupBackdropTransition` | text | Transition |
 | `popupBackground` | background | Background |
@@ -54,6 +54,7 @@ import SchemaJson from '../../../../../components/SchemaJson.astro'
 | `popupContentPadding` | spacing | Padding |
 | `popupContentWidth` | number | Width |
 | `popupDisableAutoFocus` | checkbox | Disable auto focus |
+| `popupDisableAutoFocusOnClose` | checkbox | Disable auto focus on close |
 | `popupDisableBackdrop` | checkbox | Disable backdrop |
 | `popupInfoBoxWidth` | number | Width |
 | `popupIsInfoBox` | checkbox | Info Box |

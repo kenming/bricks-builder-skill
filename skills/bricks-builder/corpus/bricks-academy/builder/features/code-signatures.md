@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/builder/features/code-signatures.
 pageType: "article"
 section: "builder"
 category: "features"
-lastmod: "2026-08-20T13:12:40.000Z"
+lastmod: "2026-09-16T10:41:20.000Z"
 ---
 Code signatures protect executable Bricks code from being changed silently in the database.
 
@@ -39,6 +39,8 @@ Code signatures are tied to the code execution security model:
 - Dangerous automatic builder signing is a separate opt-in flow. It is not recommended for normal production sites. It still requires code execution to be enabled, the Bricks **Execute code** capability, and unlocked code signatures.
 
 If the Sign code action does not create or update a signature, confirm that code execution is enabled, your user has the Execute code capability, your user has administrator-level access, and code signatures are not locked.
+
+AI clients can store and sign PHP in supported Bricks Code fields only when PHP abilities are explicitly enabled with `BRICKS_ENABLE_PHP_ABILITIES`. The connected user must use an application password and have `manage_options` and the Bricks **Execute code** capability. The same code execution and signature-lock checks still apply. See [AI Abilities and Skills](/builder/features/ai-abilities-and-skills/#optional-enable-php-execution).
 
 ## How to generate code signatures
 

@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/developer/schema/elements/filter-
 pageType: "article"
 section: "developer"
 category: "schema"
-lastmod: "2026-08-20T13:12:40.000Z"
+lastmod: "2026-09-16T10:41:20.000Z"
 ---
 import SchemaJson from '../../../../../components/SchemaJson.astro'
 
@@ -23,9 +23,28 @@ import SchemaJson from '../../../../../components/SchemaJson.astro'
 
 | Key | Type | Label | CSS |
 |---|---|---|---|
+| `filterQueryId` | query-list | Target query | — |
+| `filterNiceName` | text | URL parameter | — |
+| `filterApplyOn` | select | Apply on | — |
+| `filterSource` | select | Source | — |
+| `sourceFieldType` | select | Field type | — |
+| `wpPostField` | select | Field | — |
+| `wpUserField` | select | Field | — |
+| `wpTermField` | select | Field | — |
+| `filterTaxonomyOrderBy` | select | Order by | — |
+| `filterTaxonomyOrderMetaKey` | text | Order meta key | — |
+| `filterTaxonomyOrder` | select | filterTaxonomyOrder | — |
+| `filterTermInclude` | select | filterTermInclude | — |
+| `filterTermExclude` | select | filterTermExclude | — |
+| `filterTermTopLevel` | checkbox | Top level terms only | — |
+| `fieldProvider` | select | Provider | — |
+| `customFieldKey` | text | Meta key | — |
+| `filterActivePrefix` | text | Prefix | — |
+| `filterActiveSuffix` | text | Suffix | — |
+| `filterActiveTitle` | text | Title | — |
 | `disableAutoMinMax` | checkbox | Disable auto min/max value | — |
 | `displayMode` | select | Mode | — |
-| `step` | number | Step | — |
+| `step` | number | step | — |
 | `decimalPlaces` | number | Decimal places | — |
 | `labelThousandSeparator` | checkbox | Thousand separator | — |
 | `labelSeparatorText` | text | Separator | — |
@@ -72,12 +91,12 @@ Shared CSS controls available on all elements. Keys are prefixed with `_` and su
 | `_heightMax` | number | Max. height | `max-height` |
 | `_aspectRatio` | text | Aspect ratio | `aspect-ratio` |
 | `_position` | select | Position | `position` |
-| `_top` | number | Top | `top` |
+| `_top` | number | _top | `top` |
 | `_right` | number | Right | `right` |
 | `_bottom` | number | Bottom | `bottom` |
 | `_left` | number | Left | `left` |
 | `_zIndex` | number | Z-index | `z-index` |
-| `_order` | number | Order | `order` |
+| `_order` | number | _order | `order` |
 | `_display` | select | Display | `display`, `align-items` |
 | `_visibility` | select | Visibility | `visibility` |
 | `_overflow` | text | Overflow | `overflow` |

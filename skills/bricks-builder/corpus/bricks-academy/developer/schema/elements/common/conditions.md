@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/developer/schema/elements/common/
 pageType: "article"
 section: "developer"
 category: "schema"
-lastmod: "2026-08-20T13:12:40.000Z"
+lastmod: "2026-09-16T10:41:20.000Z"
 ---
 import SchemaJson from '../../../../../../components/SchemaJson.astro'
 
@@ -77,6 +77,13 @@ This reads as: show the element if (user is logged in AND is an administrator) O
 - `user_role`
 
 **WooCommerce**
+- `woo_checkout_login_step_needed`
+- `woo_checkout_needs_shipping`
+- `woo_checkout_needs_shipping_address`
+- `woo_order_has_downloads`
+- `woo_order_has_status`
+- `woo_order_needs_shipping_address`
+- `woo_order_withdrawal_screen`
 - `woo_product_category`
 - `woo_product_featured`
 - `woo_product_new`

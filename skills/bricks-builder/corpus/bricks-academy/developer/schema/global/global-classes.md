@@ -1,12 +1,12 @@
 ---
 title: "Global Classes Schema"
-description: "Reference for the Bricks Global Classes schema, including the exported structure and top-level properties used in global settings."
+description: "Documentation for Global Classes Schema in Bricks Academy."
 canonical: "https://academy.bricksbuilder.io/developer/schema/global/global-classes/"
 markdownUrl: "https://academy.bricksbuilder.io/developer/schema/global/global-classes.md"
 pageType: "article"
 section: "developer"
 category: "schema"
-lastmod: "2026-08-20T13:12:40.000Z"
+lastmod: "2026-09-16T10:41:20.000Z"
 ---
 import SchemaJson from '../../../../../components/SchemaJson.astro'
 

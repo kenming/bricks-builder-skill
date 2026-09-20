@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/builder/elements/woocommerce/acco
 pageType: "article"
 section: "builder"
 category: "elements"
-lastmod: "2026-08-20T13:12:40.000Z"
+lastmod: "2026-09-16T10:41:20.000Z"
 ---
 Displays the WooCommerce My Account page as editable endpoint states with shared account navigation.
 
@@ -42,8 +42,13 @@ My Account page.
 - **Lost password**
 - **Lost password (Confirmation)**
 - **Reset password**
+- **Order withdrawal** (requires WooCommerce 11.1 or later with Order Withdrawal enabled)
 
-![](imgs/account-v2-states-af13b8e590.png)
+<div className="screenshot screenshot--control-panel">
+
+![Account Page v2 State controls, including Order withdrawal and the Add missing states button.](imgs/account-page-v2-states-with-missing-state-c6d9bfa842.webp)
+
+</div>
 
 ## Generated structures
 
@@ -56,6 +61,24 @@ Account Page v2 uses support elements for generated account forms and account or
 :::
 
 ![](imgs/account-v2-view-orders-structure-example-7f86c35e5a.png)
+
+## Add missing states
+
+If an expected state element is missing, select **Account - Page v2** and click **Add missing states**. Bricks checks all currently available account states and appends any missing state elements without replacing existing states or their content. This can restore an unexpectedly missing state or add a state introduced after the page was built.
+
+The button appears only when states are missing and your builder permissions allow adding elements. States that depend on a disabled WooCommerce feature are excluded. For an Account Page v2 inside a component, edit the component definition to repair its states.
+
+Added states start empty. Select each added state and use **Insert a structure** to generate its starter content. This tool does not restore deleted custom layouts or refill existing empty states; generate content inside an empty state separately.
+
+## Order withdrawal
+
+This public state requires WooCommerce 11.1 or later with **Order Withdrawal** enabled under **WooCommerce > Settings > Advanced > Features**. It lets guests and logged-in customers enter, review, and confirm a withdrawal request.
+
+Select **Order withdrawal (State)** and generate **Complete order withdrawal block** under **Insert a structure**. If the state is missing, use **Add missing states** first. The generated block includes **Your details**, **Review**, and **Confirmation** sections. All three appear together with sample data in the builder; their **Order withdrawal screen** conditions select the matching section on the frontend.
+
+Keep the generated **Account order withdrawal form** wrappers, submit buttons, and screen conditions when customizing the layout. WooCommerce handles validation and submission. Use the [withdrawal dynamic tags](/integrations/woocommerce/woocommerce-v2-query-loops-dynamic-tags/#order-withdrawal-tags) to display submitted details. A missing or empty withdrawal state falls back to WooCommerce's native form.
+
+Add a visible link using `{woo_url:order-withdrawal}` so customers can find the endpoint; WooCommerce does not add one automatically. A withdrawal request does not cancel an order or issue a refund.
 
 ## Field maintenance
 

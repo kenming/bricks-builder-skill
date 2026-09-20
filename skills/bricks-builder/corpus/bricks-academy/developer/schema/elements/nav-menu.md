@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/developer/schema/elements/nav-men
 pageType: "article"
 section: "developer"
 category: "schema"
-lastmod: "2026-08-20T13:12:40.000Z"
+lastmod: "2026-09-16T10:41:20.000Z"
 ---
 import SchemaJson from '../../../../../components/SchemaJson.astro'
 
@@ -24,6 +24,7 @@ import SchemaJson from '../../../../../components/SchemaJson.astro'
 | Key | Type | Label | CSS |
 |---|---|---|---|
 | `menu` | select | Menu | — |
+| `ariaLabel` | text | ARIA label | — |
 | `menuAlignment` | direction | Alignment | `flex-direction` on `.bricks-nav-menu` |
 | `menuJustifyContent` | justify-content | Justify content | `justify-content` on `.bricks-nav-menu > li > a`, `justify-content` on `.bricks-nav-menu > li > .brx-submenu-toggle` |
 | `menuGap` | number | Gap | `gap` on `.bricks-nav-menu` |
@@ -69,9 +70,10 @@ import SchemaJson from '../../../../../components/SchemaJson.astro'
 | `subMenuIconMargin` | spacing | Icon margin | `margin` on `.bricks-nav-menu .sub-menu .brx-submenu-toggle button` |
 | `subMenuIconPadding` | spacing | Icon padding | `padding` on `.bricks-nav-menu .sub-menu .brx-submenu-toggle button` |
 | `mobileMenu` | select | mobileMenu | — |
+| `mobileMenuAriaLabel` | text | ARIA label | — |
 | `mobileMenuCustomBreakpoint` | number | Custom breakpoint | — |
 | `mobileMenuPosition` | select | Position | — |
-| `mobileMenuTop` | number | Top | `top` on `.bricks-mobile-menu-wrapper` |
+| `mobileMenuTop` | number | mobileMenuTop | `top` on `.bricks-mobile-menu-wrapper` |
 | `mobileMenuWidth` | number | Width | `width` on `.bricks-mobile-menu-wrapper` |
 | `mobileMenuHeight` | number | Height | `height` on `.bricks-mobile-menu-wrapper` |
 | `mobileMenuFadeIn` | checkbox | Fade in | — |
@@ -135,12 +137,12 @@ Shared CSS controls available on all elements. Keys are prefixed with `_` and su
 | `_heightMax` | number | Max. height | `max-height` |
 | `_aspectRatio` | text | Aspect ratio | `aspect-ratio` |
 | `_position` | select | Position | `position` |
-| `_top` | number | Top | `top` |
+| `_top` | number | _top | `top` |
 | `_right` | number | Right | `right` |
 | `_bottom` | number | Bottom | `bottom` |
 | `_left` | number | Left | `left` |
 | `_zIndex` | number | Z-index | `z-index` |
-| `_order` | number | Order | `order` |
+| `_order` | number | _order | `order` |
 | `_display` | select | Display | `display`, `align-items` |
 | `_visibility` | select | Visibility | `visibility` |
 | `_overflow` | text | Overflow | `overflow` |

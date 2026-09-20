@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/developer/schema/elements/product
 pageType: "article"
 section: "developer"
 category: "schema"
-lastmod: "2026-08-20T13:12:40.000Z"
+lastmod: "2026-09-16T10:41:20.000Z"
 ---
 import SchemaJson from '../../../../../components/SchemaJson.astro'
 
@@ -34,9 +34,9 @@ import SchemaJson from '../../../../../components/SchemaJson.astro'
 | `thumbnailActiveOpacity` | number | Opacity | `opacity` on `.woocommerce-product-gallery .flex-control-thumbs img.flex-active`, `opacity` on `&.thumbnail-slider .brx-product-gallery-thumbnail-slider .woocommerce-product-gallery__image.flex-active-slide img` |
 | `thumbnailBorder` | border | Border | `border` on `.woocommerce-product-gallery .flex-control-thumbs img`, `border` on `&.thumbnail-slider .brx-product-gallery-thumbnail-slider .woocommerce-product-gallery__image img` |
 | `thumbnailActiveBorder` | border | Border | `border` on `.woocommerce-product-gallery .flex-control-thumbs img.flex-active`, `border` on `&.thumbnail-slider .brx-product-gallery-thumbnail-slider .woocommerce-product-gallery__image.flex-active-slide img` |
-| `thumbnailSlider` | checkbox | Slider | — |
-| `thumbnailWrapperMaxHeight` | number | Slider | `max-height` on `&.thumbnail-slider .brx-product-gallery-thumbnail-slider` |
-| `itemMargin` | number | Slider | `margin-inline-end` on `&.thumbnail-slider[data-pos="top"] .brx-product-gallery-thumbnail-slider .woocommerce-product-gallery__image`, `margin-inline-end` on `&.thumbnail-slider[data-pos="bottom"] .brx-product-gallery-thumbnail-slider .woocommerce-product-gallery__image`, `margin-bottom` on `&.thumbnail-slider[data-pos="right"] .brx-product-gallery-thumbnail-slider .woocommerce-product-gallery__image`, `margin-bottom` on `&.thumbnail-slider[data-pos="left"] .brx-product-gallery-thumbnail-slider .woocommerce-product-gallery__image` |
+| `thumbnailSlider` | checkbox | thumbnailSlider | — |
+| `thumbnailWrapperMaxHeight` | number | thumbnailWrapperMaxHeight | `max-height` on `&.thumbnail-slider .brx-product-gallery-thumbnail-slider` |
+| `itemMargin` | number | itemMargin | `margin-inline-end` on `&.thumbnail-slider[data-pos="top"] .brx-product-gallery-thumbnail-slider .woocommerce-product-gallery__image`, `margin-inline-end` on `&.thumbnail-slider[data-pos="bottom"] .brx-product-gallery-thumbnail-slider .woocommerce-product-gallery__image`, `margin-bottom` on `&.thumbnail-slider[data-pos="right"] .brx-product-gallery-thumbnail-slider .woocommerce-product-gallery__image`, `margin-bottom` on `&.thumbnail-slider[data-pos="left"] .brx-product-gallery-thumbnail-slider .woocommerce-product-gallery__image` |
 | `maxItems` | number | Max. items | — |
 | `prevArrow` | icon | Prev arrow | — |
 | `nextArrow` | icon | Next arrow | — |
@@ -64,12 +64,12 @@ Shared CSS controls available on all elements. Keys are prefixed with `_` and su
 | `_heightMax` | number | Max. height | `max-height` |
 | `_aspectRatio` | text | Aspect ratio | `aspect-ratio` |
 | `_position` | select | Position | `position` |
-| `_top` | number | Top | `top` |
+| `_top` | number | _top | `top` |
 | `_right` | number | Right | `right` |
 | `_bottom` | number | Bottom | `bottom` |
 | `_left` | number | Left | `left` |
 | `_zIndex` | number | Z-index | `z-index` |
-| `_order` | number | Order | `order` |
+| `_order` | number | _order | `order` |
 | `_display` | select | Display | `display`, `align-items` |
 | `_visibility` | select | Visibility | `visibility` |
 | `_overflow` | text | Overflow | `overflow` |

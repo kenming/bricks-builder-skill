@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/builder/features/html-css-to-bric
 pageType: "article"
 section: "builder"
 category: "features"
-lastmod: "2026-08-20T13:12:40.000Z"
+lastmod: "2026-09-16T10:41:20.000Z"
 ---
 Building a layout in Bricks based on a web layout library or AI-generated layouts usually means building it from scratch, element by element. This feature changes that workflow. You can now paste HTML or CSS directly into the builder to create native elements and styles instantly.
 
@@ -91,6 +91,14 @@ Bricks will not execute JavaScript or load external stylesheets automatically up
 Any detected scripts or external links are placed inside a **Code** element. You must manually review, sign, and save these elements before they are executed.
 
 For example, pasting `<script>console.log('Ready')</script>` creates a Code element. The script remains inactive until a user with permission reviews and signs it.
+
+### Imports through AI abilities
+
+When an AI client imports HTML or CSS through Bricks abilities, Bricks checks the target and the connected user's permissions. Disallowed content is omitted automatically. A one-call import can apply the retained content and returns a prominent partial result with every omitted element and the reason it was omitted. An explicit preview is also available.
+
+If the retained tree is empty or invalid, the import is rejected. A nonempty replacement is also rejected when source content was omitted or invalid, because it could remove existing content incompletely.
+
+HTML and CSS imports do not grant PHP access. Without `unfiltered_html`, HTML is limited to WordPress safe post HTML (KSES). CSS follows the relevant style and resource permissions. JavaScript requires WordPress `unfiltered_html` and permission to edit the target. Code elements keep their existing **Execute code** permission, global code execution setting, and signing requirements. The abilities do not bypass those requirements. PHP in supported Code fields requires the separate PHP abilities opt-in and its signing safeguards. See [AI Abilities and Skills](/builder/features/ai-abilities-and-skills/#optional-enable-php-execution).
 
 ## Notes
 

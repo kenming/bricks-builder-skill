@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/developer/schema/elements/post-co
 pageType: "article"
 section: "developer"
 category: "schema"
-lastmod: "2026-08-20T13:12:40.000Z"
+lastmod: "2026-09-16T10:41:20.000Z"
 ---
 import SchemaJson from '../../../../../components/SchemaJson.astro'
 
@@ -28,7 +28,7 @@ import SchemaJson from '../../../../../components/SchemaJson.astro'
 | `titleTag` | select | HTML tag | — |
 | `titleTypography` | typography | Typography | `font` on `.comments-title` |
 | `avatar` | checkbox | Show avatar | — |
-| `avatarSize` | number | Size | `margin-left` on `.depth-2`, `margin-left` on `.depth-3` |
+| `avatarSize` | number | Size | `height` on `.avatar`, `width` on `.avatar`, `margin-left` on `.depth-2`, `margin-left` on `.depth-3` |
 | `avatarBorder` | border | Border | `border` on `.avatar` |
 | `avatarBoxShadow` | box-shadow | Box shadow | `box-shadow` on `.avatar` |
 | `commentAuthorTag` | select | Author | — |
@@ -73,12 +73,12 @@ Shared CSS controls available on all elements. Keys are prefixed with `_` and su
 | `_heightMax` | number | Max. height | `max-height` |
 | `_aspectRatio` | text | Aspect ratio | `aspect-ratio` |
 | `_position` | select | Position | `position` |
-| `_top` | number | Top | `top` |
+| `_top` | number | _top | `top` |
 | `_right` | number | Right | `right` |
 | `_bottom` | number | Bottom | `bottom` |
 | `_left` | number | Left | `left` |
 | `_zIndex` | number | Z-index | `z-index` |
-| `_order` | number | Order | `order` |
+| `_order` | number | _order | `order` |
 | `_display` | select | Display | `display`, `align-items` |
 | `_visibility` | select | Visibility | `visibility` |
 | `_overflow` | text | Overflow | `overflow` |

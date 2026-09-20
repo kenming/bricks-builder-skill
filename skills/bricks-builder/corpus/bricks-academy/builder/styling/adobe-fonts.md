@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/builder/styling/adobe-fonts.md"
 pageType: "article"
 section: "builder"
 category: "styling"
-lastmod: "2026-08-20T13:12:40.000Z"
+lastmod: "2026-09-16T10:41:20.000Z"
 ---
 ## How to use Adobe Fonts with Bricks
 
@@ -61,6 +61,10 @@ Fonts are now synced & available in the builder
 Those fonts are now available inside the builder in any `font-family` dropdown:
 
 ![](imgs/bricks-adobe-fonts-in-bricks-b87c84c96d.png)
+
+Syncing an Adobe Fonts project only makes its fonts available in Bricks typography controls. To apply and load an Adobe font on the frontend, select it in a typography setting, such as an element, global class, Theme Style, page setting, or template setting.
+
+Bricks loads the Adobe Fonts project CSS only when an Adobe font from the synced project is detected in the generated page CSS.
 
 :::note
 NOTE: Bricks recognizes when you use an Adobe font that is also available as a Google font. Bricks will load only the Adobe font to prevent loading this font from Google as well.

@@ -1,12 +1,12 @@
 ---
-title: "Slider (Nestable) Schema"
-description: "Schema for Bricks Slider (Nestable) element"
+title: "Slidercarousel Elementbricks (Nestable) Schema"
+description: "Schema for Bricks Slidercarousel elementbricks (Nestable) element"
 canonical: "https://academy.bricksbuilder.io/developer/schema/elements/slider-nested/"
 markdownUrl: "https://academy.bricksbuilder.io/developer/schema/elements/slider-nested.md"
 pageType: "article"
 section: "developer"
 category: "schema"
-lastmod: "2026-08-20T13:12:40.000Z"
+lastmod: "2026-09-16T10:41:20.000Z"
 ---
 import SchemaJson from '../../../../../components/SchemaJson.astro'
 
@@ -43,49 +43,49 @@ import SchemaJson from '../../../../../components/SchemaJson.astro'
 | `rewind` | checkbox | Rewind | — |
 | `rewindByDrag` | checkbox | Rewind by drag | — |
 | `rewindSpeed` | number | Speed in ms | — |
-| `slidePadding` | spacing | Padding | `padding` on `.splide__slide` |
-| `slideAlignHorizontal` | align-items | Align horizontal | `align-items` on `.splide__slide` |
-| `slideAlignVertical` | justify-content | Align vertical | `justify-content` on `.splide__slide` |
-| `slideBackground` | background | Background | `background` on `.splide__slide` |
-| `slideBorder` | border | Border | `border` on `.splide__slide` |
+| `slidePadding` | spacing | Padding | `padding` on `> .splide__track > .splide__list > .splide__slide` |
+| `slideAlignHorizontal` | align-items | Align horizontal | `align-items` on `> .splide__track > .splide__list > .splide__slide` |
+| `slideAlignVertical` | justify-content | Align vertical | `justify-content` on `> .splide__track > .splide__list > .splide__slide` |
+| `slideBackground` | background | Background | `background` on `> .splide__track > .splide__list > .splide__slide` |
+| `slideBorder` | border | Border | `border` on `> .splide__track > .splide__list > .splide__slide` |
 | `arrows` | checkbox | Show | — |
-| `arrowHeight` | number | Height | `height` on `.splide__arrow` |
-| `arrowWidth` | number | Width | `width` on `.splide__arrow` |
-| `arrowBackground` | color | Background | `background-color` on `.splide__arrow` |
-| `arrowBorder` | border | Border | `border` on `.splide__arrow` |
-| `arrowColor` | color | Color | `color` on `.splide__arrow`, `fill` on `.splide__arrow\{pseudo\} svg` |
-| `arrowSize` | number | Size | `font-size` on `.splide__arrow`, `height` on `.splide__arrow svg`, `width` on `.splide__arrow svg`, `min-height` on `.splide__arrow`, `min-width` on `.splide__arrow` |
-| `arrowTextShadow` | text-shadow | Text shadow | `text-shadow` on `.splide__arrow` |
-| `arrowDisabledBackground` | color | Background | `background-color` on `.splide__arrow:disabled` |
-| `arrowDisabledBorder` | border | Border | `border` on `.splide__arrow:disabled` |
-| `arrowDisabledColor` | color | Color | `color` on `.splide__arrow:disabled`, `fill` on `.splide__arrow:disabled svg` |
-| `arrowDisabledOpacity` | number | Opacity | `opacity` on `.splide__arrow:disabled` |
-| `prevArrow` | icon | Prev arrow | `—` on `.splide__arrow--prev > *` |
-| `prevArrowTop` | number | Top | `top` on `.splide__arrow--prev` |
-| `prevArrowRight` | number | Right | `right` on `.splide__arrow--prev` |
-| `prevArrowBottom` | number | Bottom | `bottom` on `.splide__arrow--prev` |
-| `prevArrowLeft` | number | Left | `left` on `.splide__arrow--prev` |
-| `prevArrowTransform` | transform | Transform | `transform` on `.splide__arrow--prev` |
-| `nextArrow` | icon | Next arrow | `—` on `.splide__arrow--next > *` |
-| `nextArrowTop` | number | Top | `top` on `.splide__arrow--next` |
-| `nextArrowRight` | number | Right | `right` on `.splide__arrow--next` |
-| `nextArrowBottom` | number | Bottom | `bottom` on `.splide__arrow--next` |
-| `nextArrowLeft` | number | Left | `left` on `.splide__arrow--next` |
-| `nextArrowTransform` | transform | Transform | `transform` on `.splide__arrow--next` |
+| `arrowHeight` | number | Height | `height` on `> .splide__arrows > .splide__arrow` |
+| `arrowWidth` | number | Width | `width` on `> .splide__arrows > .splide__arrow` |
+| `arrowBackground` | color | Background | `background-color` on `> .splide__arrows > .splide__arrow` |
+| `arrowBorder` | border | Border | `border` on `> .splide__arrows > .splide__arrow` |
+| `arrowColor` | color | Color | `color` on `> .splide__arrows > .splide__arrow`, `fill` on `> .splide__arrows > .splide__arrow\{pseudo\} svg` |
+| `arrowSize` | number | Size | `font-size` on `> .splide__arrows > .splide__arrow`, `height` on `> .splide__arrows > .splide__arrow svg`, `width` on `> .splide__arrows > .splide__arrow svg`, `min-height` on `> .splide__arrows > .splide__arrow`, `min-width` on `> .splide__arrows > .splide__arrow` |
+| `arrowTextShadow` | text-shadow | Text shadow | `text-shadow` on `> .splide__arrows > .splide__arrow` |
+| `arrowDisabledBackground` | color | Background | `background-color` on `> .splide__arrows > .splide__arrow:disabled` |
+| `arrowDisabledBorder` | border | Border | `border` on `> .splide__arrows > .splide__arrow:disabled` |
+| `arrowDisabledColor` | color | Color | `color` on `> .splide__arrows > .splide__arrow:disabled`, `fill` on `> .splide__arrows > .splide__arrow:disabled svg` |
+| `arrowDisabledOpacity` | number | Opacity | `opacity` on `> .splide__arrows > .splide__arrow:disabled` |
+| `prevArrow` | icon | Prev arrow | `—` on `> .splide__arrows > .splide__arrow--prev > *` |
+| `prevArrowTop` | number | prevArrowTop | `top` on `> .splide__arrows > .splide__arrow--prev` |
+| `prevArrowRight` | number | Right | `right` on `> .splide__arrows > .splide__arrow--prev` |
+| `prevArrowBottom` | number | Bottom | `bottom` on `> .splide__arrows > .splide__arrow--prev` |
+| `prevArrowLeft` | number | Left | `left` on `> .splide__arrows > .splide__arrow--prev` |
+| `prevArrowTransform` | transform | Transform | `transform` on `> .splide__arrows > .splide__arrow--prev` |
+| `nextArrow` | icon | Next arrow | `—` on `> .splide__arrows > .splide__arrow--next > *` |
+| `nextArrowTop` | number | nextArrowTop | `top` on `> .splide__arrows > .splide__arrow--next` |
+| `nextArrowRight` | number | Right | `right` on `> .splide__arrows > .splide__arrow--next` |
+| `nextArrowBottom` | number | Bottom | `bottom` on `> .splide__arrows > .splide__arrow--next` |
+| `nextArrowLeft` | number | Left | `left` on `> .splide__arrows > .splide__arrow--next` |
+| `nextArrowTransform` | transform | Transform | `transform` on `> .splide__arrows > .splide__arrow--next` |
 | `pagination` | checkbox | Show | — |
-| `paginationSpacing` | spacing | Margin | `margin` on `.splide__pagination .splide__pagination__page` |
-| `paginationHeight` | number | Height | `height` on `.splide__pagination .splide__pagination__page` |
-| `paginationWidth` | number | Width | `width` on `.splide__pagination .splide__pagination__page` |
-| `paginationColor` | color | Color | `color` on `.splide__pagination .splide__pagination__page`, `background-color` on `.splide__pagination .splide__pagination__page` |
-| `paginationBorder` | border | Border | `border` on `.splide__pagination .splide__pagination__page` |
-| `paginationHeightActive` | number | Height | `height` on `.splide__pagination .splide__pagination__page.is-active` |
-| `paginationWidthActive` | number | Width | `width` on `.splide__pagination .splide__pagination__page.is-active` |
-| `paginationColorActive` | color | Color | `color` on `.splide__pagination .splide__pagination__page.is-active`, `background-color` on `.splide__pagination .splide__pagination__page.is-active` |
-| `paginationBorderActive` | border | Border | `border` on `.splide__pagination .splide__pagination__page.is-active` |
-| `paginationTop` | number | Top | `top` on `.splide__pagination`, `bottom` on `.splide__pagination` |
-| `paginationRight` | number | Right | `right` on `.splide__pagination`, `left` on `.splide__pagination`, `transform` on `.splide__pagination` |
-| `paginationBottom` | number | Bottom | `bottom` on `.splide__pagination` |
-| `paginationLeft` | number | Left | `left` on `.splide__pagination`, `right` on `.splide__pagination`, `transform` on `.splide__pagination` |
+| `paginationSpacing` | spacing | Margin | `margin` on `> .splide__pagination .splide__pagination__page` |
+| `paginationHeight` | number | Height | `height` on `> .splide__pagination .splide__pagination__page` |
+| `paginationWidth` | number | Width | `width` on `> .splide__pagination .splide__pagination__page` |
+| `paginationColor` | color | Color | `color` on `> .splide__pagination .splide__pagination__page`, `background-color` on `> .splide__pagination .splide__pagination__page` |
+| `paginationBorder` | border | Border | `border` on `> .splide__pagination .splide__pagination__page` |
+| `paginationHeightActive` | number | Height | `height` on `> .splide__pagination .splide__pagination__page.is-active` |
+| `paginationWidthActive` | number | Width | `width` on `> .splide__pagination .splide__pagination__page.is-active` |
+| `paginationColorActive` | color | Color | `color` on `> .splide__pagination .splide__pagination__page.is-active`, `background-color` on `> .splide__pagination .splide__pagination__page.is-active` |
+| `paginationBorderActive` | border | Border | `border` on `> .splide__pagination .splide__pagination__page.is-active` |
+| `paginationTop` | number | paginationTop | `top` on `> .splide__pagination`, `bottom` on `> .splide__pagination` |
+| `paginationRight` | number | Right | `right` on `> .splide__pagination`, `left` on `> .splide__pagination`, `transform` on `> .splide__pagination` |
+| `paginationBottom` | number | Bottom | `bottom` on `> .splide__pagination` |
+| `paginationLeft` | number | Left | `left` on `> .splide__pagination`, `right` on `> .splide__pagination`, `transform` on `> .splide__pagination` |
 
 ## Inherited CSS controls
 
@@ -104,12 +104,12 @@ Shared CSS controls available on all elements. Keys are prefixed with `_` and su
 | `_heightMax` | number | Max. height | `max-height` |
 | `_aspectRatio` | text | Aspect ratio | `aspect-ratio` |
 | `_position` | select | Position | `position` |
-| `_top` | number | Top | `top` |
+| `_top` | number | _top | `top` |
 | `_right` | number | Right | `right` |
 | `_bottom` | number | Bottom | `bottom` |
 | `_left` | number | Left | `left` |
 | `_zIndex` | number | Z-index | `z-index` |
-| `_order` | number | Order | `order` |
+| `_order` | number | _order | `order` |
 | `_display` | select | Display | `display`, `align-items` |
 | `_visibility` | select | Visibility | `visibility` |
 | `_overflow` | text | Overflow | `overflow` |
