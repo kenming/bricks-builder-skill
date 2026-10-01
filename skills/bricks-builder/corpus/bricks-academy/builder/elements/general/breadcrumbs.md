@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/builder/elements/general/breadcru
 pageType: "article"
 section: "builder"
 category: "elements"
-lastmod: "2026-09-16T10:41:20.000Z"
+lastmod: "2026-09-30T17:19:56.000Z"
 ---
 Breadcrumbs are an essential part of website navigation, providing users with a clear path to navigate through the site hierarchy. They improve the overall user experience by helping users know their location within the site and easily navigate back to previous pages.
 

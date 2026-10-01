@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/builder/features/custom-code.md"
 pageType: "article"
 section: "builder"
 category: "features"
-lastmod: "2026-09-16T10:41:20.000Z"
+lastmod: "2026-09-30T17:19:56.000Z"
 ---
 Bricks allows you to add custom code (CSS, JavaScript, HTML, and PHP) to different parts of your website.
 

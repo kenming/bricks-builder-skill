@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/builder/styling/css-grid-layout.m
 pageType: "article"
 section: "builder"
 category: "styling"
-lastmod: "2026-09-16T10:41:20.000Z"
+lastmod: "2026-09-30T17:19:56.000Z"
 ---
 Available since Bricks 1.6.1 CSS grid allows you to create two-dimensional layouts (columns & rows). Whereas CSS flexbox, which Bricks uses as the default layout model, is designed for one-dimensional layouts (either column or row).
 

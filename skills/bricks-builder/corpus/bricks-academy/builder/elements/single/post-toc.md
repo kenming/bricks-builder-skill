@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/builder/elements/single/post-toc.
 pageType: "article"
 section: "builder"
 category: "elements"
-lastmod: "2026-09-16T10:41:20.000Z"
+lastmod: "2026-09-30T17:19:56.000Z"
 ---
 Generates a table of contents based on the headings in the post content.
 

@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/builder/elements/woocommerce/temp
 pageType: "article"
 section: "builder"
 category: "elements"
-lastmod: "2026-09-16T10:41:20.000Z"
+lastmod: "2026-09-30T17:19:56.000Z"
 ---
 Renders output from a selected WooCommerce template hook so you can place WooCommerce hook content in your layout.
 

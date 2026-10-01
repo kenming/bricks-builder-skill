@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/builder/elements/wordpress/search
 pageType: "article"
 section: "builder"
 category: "elements"
-lastmod: "2026-09-16T10:41:20.000Z"
+lastmod: "2026-09-30T17:19:56.000Z"
 ---
 Displays a search form with input field and submit button, or an icon that opens an overlay search.
 

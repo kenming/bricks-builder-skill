@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/developer/schema/global/theme-sty
 pageType: "article"
 section: "developer"
 category: "schema"
-lastmod: "2026-09-16T10:41:20.000Z"
+lastmod: "2026-09-30T17:19:56.000Z"
 ---
 import SchemaJson from '../../../../../components/SchemaJson.astro'
 
@@ -393,10 +393,10 @@ Theme style controls for the "form" section. Default CSS selector: .brxe-form
 | `labelTypography` | typography | Label typography | `font` on `.form-group label`, `font` on `.form-group .label` |
 | `placeholderTypography` | typography | Placeholder typography | `font` on `::placeholder`, `font` on `select` |
 | `fieldTypography` | typography | Typography | `font` on `.form-group input`, `font` on `select`, `font` on `textarea` |
-| `fieldBackgroundColor` | color | Background color | `background-color` on `.form-group input`, `background-color` on `.flatpickr`, `background-color` on `select`, `background-color` on `textarea` |
-| `fieldBorder` | border | Border | `border` on `.form-group input`, `border` on `.flatpickr`, `border` on `select`, `border` on `textarea`, `border` on `.bricks-button`, `border` on `.choose-files` |
+| `fieldBackgroundColor` | color | Background color | `background-color` on `.form-group input`, `background-color` on `.flatpickr`, `background-color` on `select`, `background-color` on `textarea`, `background-color` on `.form-field-richtext + .tox-tinymce` |
+| `fieldBorder` | border | Border | `border` on `.form-group input`, `border` on `.flatpickr`, `border` on `select`, `border` on `textarea`, `border` on `.form-field-richtext + .tox-tinymce`, `border` on `.bricks-button`, `border` on `.choose-files` |
 | `fieldMargin` | spacing | Spacing | `padding` on `.form-group` |
-| `fieldPadding` | spacing | Padding | `padding` on `.form-group input`, `padding` on `.flatpickr`, `padding` on `select`, `padding` on `textarea` |
+| `fieldPadding` | spacing | Padding | `padding` on `.form-group input`, `padding` on `.flatpickr`, `padding` on `select`, `padding` on `textarea`, `padding` on `.form-field-richtext + .tox-tinymce` |
 | `submitButtonPadding` | spacing | Padding | `padding` on `.bricks-button` |
 | `submitButtonTypography` | typography | Typography | `font` on `.bricks-button` |
 | `submitButtonBackgroundColor` | color | Background color | `background-color` on `.bricks-button` |

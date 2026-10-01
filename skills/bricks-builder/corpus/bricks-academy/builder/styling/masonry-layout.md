@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/builder/styling/masonry-layout.md
 pageType: "article"
 section: "builder"
 category: "styling"
-lastmod: "2026-09-16T10:41:20.000Z"
+lastmod: "2026-09-30T17:19:56.000Z"
 ---
 Starting with version 1.11.1, you can easily apply a masonry layout to any layout element in Bricks.
 

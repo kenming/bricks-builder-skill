@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/developer/controls/typography-con
 pageType: "article"
 section: "developer"
 category: "controls"
-lastmod: "2026-09-16T10:41:20.000Z"
+lastmod: "2026-09-30T17:19:56.000Z"
 ---
 The typography control provides the following CSS properties:
 

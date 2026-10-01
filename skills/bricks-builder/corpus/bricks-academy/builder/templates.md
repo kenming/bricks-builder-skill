@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/builder/templates.md"
 pageType: "hub"
 section: "builder"
 category: "templates"
-lastmod: "2026-09-16T10:41:20.000Z"
+lastmod: "2026-09-30T17:19:56.000Z"
 ---
 Templates are central to how Bricks handles repeated layouts across headers, footers, archives, single posts, popups, and other site areas.
 

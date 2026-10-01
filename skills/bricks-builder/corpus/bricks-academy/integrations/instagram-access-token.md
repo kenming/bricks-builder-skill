@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/integrations/instagram-access-tok
 pageType: "article"
 section: "integrations"
 category: "instagram-access-token"
-lastmod: "2026-09-16T10:41:20.000Z"
+lastmod: "2026-09-30T17:19:56.000Z"
 ---
 To use the Instagram Feed element (@since 1.9.1), you need an access token. This token allows secure retrieval of your Instagram account data. This guide explains how to get the token using the Instagram API with Instagram Login.
 

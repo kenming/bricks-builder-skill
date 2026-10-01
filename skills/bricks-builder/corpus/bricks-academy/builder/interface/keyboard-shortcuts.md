@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/builder/interface/keyboard-shortc
 pageType: "article"
 section: "builder"
 category: "interface"
-lastmod: "2026-09-16T10:41:20.000Z"
+lastmod: "2026-09-30T17:19:56.000Z"
 ---
 Quickly perform the most common in-builder actions through short & simple keyboard shortcuts:
 

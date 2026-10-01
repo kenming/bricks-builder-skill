@@ -6,6 +6,6 @@ markdownUrl: "https://academy.bricksbuilder.io/builder/elements/product/product-
 pageType: "article"
 section: "builder"
 category: "elements"
-lastmod: "2026-09-16T10:41:20.000Z"
+lastmod: "2026-09-30T17:19:56.000Z"
 ---
 Displays the WooCommerce product short description (excerpt) on single product pages.

@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/developer/schema/elements/filter-
 pageType: "article"
 section: "developer"
 category: "schema"
-lastmod: "2026-09-16T10:41:20.000Z"
+lastmod: "2026-09-30T17:19:56.000Z"
 ---
 import SchemaJson from '../../../../../components/SchemaJson.astro'
 
@@ -58,9 +58,9 @@ import SchemaJson from '../../../../../components/SchemaJson.astro'
 | `filterActivePrefix` | text | Prefix | — |
 | `filterActiveSuffix` | text | Suffix | — |
 | `filterActiveTitle` | text | Title | — |
+| `placeholder` | text | Selection placeholder | — |
 | `choicesJs` | checkbox | Enhanced select | — |
 | `choicesPosition` | select | Dropdown position | — |
-| `placeholder` | text | Selection placeholder | — |
 | `choicesSearch` | checkbox | Enable search | — |
 | `choicesSearchBackground` | color | Background color | `background-color` on `input[type="search"]` |
 | `choicesSearchPlaceholder` | text | Search placeholder | — |

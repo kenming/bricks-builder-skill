@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/builder/features/interactions.md"
 pageType: "article"
 section: "builder"
 category: "features"
-lastmod: "2026-09-16T10:41:20.000Z"
+lastmod: "2026-09-30T17:19:56.000Z"
 ---
 Interactions, available since Bricks 1.6, let you run an action when something happens on the front end. A simple interaction can show a hidden element on click. A more advanced interaction can listen for a query AJAX event, check browser storage, fetch an AJAX popup with the right post context, or call a custom JavaScript function.
 
@@ -217,6 +217,8 @@ Most actions use one of these target modes:
 - **Self**: run on the source element.
 - **CSS selector**: run on every element matching the selector.
 - **Popup**: run on a selected popup template.
+
+For target fields that accept an element selector or ID, use the copy button beside the field, then right-click the target element in the canvas or Structure panel and choose the offered copy action. Selector fields copy the element's CSS ID with `#`; form and filter event fields copy its internal Bricks ID. Press Esc to leave this mode without copying.
 
 Some actions do not use the standard target control because they have their own target field or no target at all. Examples include Load more, Browser storage, Toggle offcanvas, Map actions, and Clear form.
 

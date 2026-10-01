@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/privacy.md"
 pageType: "article"
 section: "privacy"
 category: ""
-lastmod: "2026-09-16T10:41:20.000Z"
+lastmod: "2026-09-30T17:19:56.000Z"
 ---
 Bricks Academy is the public documentation site for Bricks. This page explains how Academy handles analytics, embedded videos, feedback, and local browser storage.
 

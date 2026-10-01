@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/builder/styling/layout.md"
 pageType: "article"
 section: "builder"
 category: "styling"
-lastmod: "2026-09-16T10:41:20.000Z"
+lastmod: "2026-09-30T17:19:56.000Z"
 ---
 Bricks has four layout elements (since 1.5) to group & lay out your content in a fast, predictable, and streamlined approach:
 

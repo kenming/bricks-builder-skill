@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/builder/styling/custom-fonts.md"
 pageType: "article"
 section: "builder"
 category: "styling"
-lastmod: "2026-09-16T10:41:20.000Z"
+lastmod: "2026-09-30T17:19:56.000Z"
 ---
 Your website typography has a huge impact on how your site is perceived, and it'll pay off to spend some time to get this aspect right.
 

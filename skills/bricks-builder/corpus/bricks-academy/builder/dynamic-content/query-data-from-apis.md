@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/builder/dynamic-content/query-dat
 pageType: "article"
 section: "builder"
 category: "dynamic-content"
-lastmod: "2026-09-16T10:41:20.000Z"
+lastmod: "2026-09-30T17:19:56.000Z"
 ---
 Starting with Bricks 2.1, the Query Loop can fetch JSON from an external API and render the returned array as loop items.
 

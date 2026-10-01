@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/builder/interface/save-publish.md
 pageType: "article"
 section: "builder"
 category: "interface"
-lastmod: "2026-09-16T10:41:20.000Z"
+lastmod: "2026-09-30T17:19:56.000Z"
 ---
 Bricks, by default, automatically creates an autosave every 60 seconds when the current builder area has unsaved element changes.
 

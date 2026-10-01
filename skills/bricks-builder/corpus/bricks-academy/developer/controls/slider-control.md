@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/developer/controls/slider-control
 pageType: "article"
 section: "developer"
 category: "controls"
-lastmod: "2026-09-16T10:41:20.000Z"
+lastmod: "2026-09-30T17:19:56.000Z"
 ---
 The slider control shows a draggable range input field. Default units are `px`, `em` and `rem`. You can set the following control parameters:
 

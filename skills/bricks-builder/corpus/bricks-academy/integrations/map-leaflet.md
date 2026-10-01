@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/integrations/map-leaflet.md"
 pageType: "article"
 section: "integrations"
 category: "map-leaflet"
-lastmod: "2026-09-16T10:41:20.000Z"
+lastmod: "2026-09-30T17:19:56.000Z"
 ---
 Starting with **Bricks 2.1**, you can use the new **Map (Leaflet)** element to display fully interactive maps powered by [Leaflet.js](https://leafletjs.com/).
 

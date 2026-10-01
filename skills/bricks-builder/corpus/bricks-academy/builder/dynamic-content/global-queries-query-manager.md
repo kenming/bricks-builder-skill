@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/builder/dynamic-content/global-qu
 pageType: "article"
 section: "builder"
 category: "dynamic-content"
-lastmod: "2026-09-16T10:41:20.000Z"
+lastmod: "2026-09-30T17:19:56.000Z"
 ---
 https://youtu.be/b4nGPJIE5rE
 

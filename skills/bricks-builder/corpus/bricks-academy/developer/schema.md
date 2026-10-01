@@ -6,13 +6,13 @@ markdownUrl: "https://academy.bricksbuilder.io/developer/schema.md"
 pageType: "article"
 section: "developer"
 category: "schema"
-lastmod: "2026-09-16T10:41:20.000Z"
+lastmod: "2026-09-30T17:19:56.000Z"
 ---
 import SchemaDownload from '../../../../components/SchemaDownload.astro'
 
 This page explains how Bricks structures its data. Use it alongside the individual element and control schemas to understand or generate valid Bricks content. Each JSON file describes the exact shape of data Bricks reads and writes, so AI coding assistants, build tools, import/export scripts, and custom integrations can generate, validate, or transform Bricks content without the builder UI.
 
-**Schema version:** 2.4
+**Schema version:** 2.4.2
 
 <SchemaDownload />
 

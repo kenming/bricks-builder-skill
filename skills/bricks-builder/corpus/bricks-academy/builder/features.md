@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/builder/features.md"
 pageType: "hub"
 section: "builder"
 category: "features"
-lastmod: "2026-09-16T10:41:20.000Z"
+lastmod: "2026-09-30T17:19:56.000Z"
 ---
 Bricks features extend the core page-building workflow with reusable systems, interaction tooling, template workflows, and advanced frontend and content capabilities.
 

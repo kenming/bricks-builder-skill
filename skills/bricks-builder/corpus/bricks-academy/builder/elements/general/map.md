@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/builder/elements/general/map.md"
 pageType: "article"
 section: "builder"
 category: "elements"
-lastmod: "2026-09-16T10:41:20.000Z"
+lastmod: "2026-09-30T17:19:56.000Z"
 ---
 The **Map** element in Bricks allows you to display Google Maps with a range of capabilities, from showing a single location to dynamically rendering multiple markers based on queries.
 
@@ -18,9 +18,15 @@ Without an API key, the Map element is still functional but limited to displayin
 
 To ensure a marker is shown, simply enter a pair of coordinates (latitude and longitude, separated by a comma) in the **Address** field.
 
+## Choose how the map renders
+
+With an API key saved, **Render mode** lets you choose **Google Maps JavaScript API** (the default) or **Iframe embed**. Use Iframe embed when the map only needs a single address and you do not need API-only features such as multiple markers, clustering, query syncing, or custom Info Boxes. The iframe mode does not load the Google Maps JavaScript API for that map. Set its **Loading** option to `lazy` (the default) or `eager`.
+
+Without an API key, the map uses the single-address iframe mode automatically. The Render mode selector appears only when an API key is saved.
+
 ## Displaying multiple addresses
 
-To unlock advanced features such as multiple locations, clustering, and custom Info Boxes, a valid **Google Maps API key** is required. Once your key is added, you will see more controls on the element.
+To unlock advanced features such as multiple locations, clustering, and custom Info Boxes, save a valid **Google Maps API key** and use the **Google Maps JavaScript API** render mode. You will then see more controls on the element.
 
 ![](imgs/bricks-2.0-map-addresses-9cce7608c6.png)
 
@@ -245,6 +251,8 @@ Replace `1567` with your actual page ID. Adjust the delay as necessary to ensure
 ### Map
 
 - **Map ID** (text) - Google Maps ID from Cloud Console for advanced features.
+- **Render mode** (select) - With an API key saved, choose Google Maps JavaScript API or Iframe embed. Default: Google Maps JavaScript API.
+- **Loading** (select) - For iframe rendering, choose `lazy` or `eager`. Default: `lazy`.
 
 #### Map center
 

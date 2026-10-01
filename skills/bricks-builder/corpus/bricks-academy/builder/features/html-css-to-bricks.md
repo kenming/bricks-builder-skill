@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/builder/features/html-css-to-bric
 pageType: "article"
 section: "builder"
 category: "features"
-lastmod: "2026-09-16T10:41:20.000Z"
+lastmod: "2026-09-30T17:19:56.000Z"
 ---
 Building a layout in Bricks based on a web layout library or AI-generated layouts usually means building it from scratch, element by element. This feature changes that workflow. You can now paste HTML or CSS directly into the builder to create native elements and styles instantly.
 
@@ -21,6 +21,12 @@ You can control how Bricks handles pasted code in the settings.
 - **Enabled (confirm on paste):** A dialog appears asking for permission to convert the code on paste.
 - **Enabled (no confirm on paste):** Bricks converts the code automatically on paste.
 - **Disabled**
+
+## Paste requirements
+
+HTML & CSS to Bricks reads your clipboard through the browser Clipboard API. Open the builder in a secure context, such as HTTPS or a local origin that your browser recognizes as trustworthy.
+
+If you use LocalWP or another local domain, enable and trust its SSL certificate, then open the builder over HTTPS before testing the paste action. If pasting has no visible effect, allow clipboard access for the site in your browser settings, reload the builder, and retry with the HTML example below.
 
 ## How it works
 
@@ -42,6 +48,10 @@ The converter identifies classes in your code and creates corresponding Bricks g
 - **Mapped styles:** Properties like margin, padding, and typography are applied directly to the Bricks UI controls.
 - **Custom CSS:** Properties that do not have a dedicated UI control are added to the element's Custom CSS area.
 - **Variables:** Any variables defined in `:root` are converted into Bricks Global Variables.
+
+### Responsive class styles
+
+When a class uses a simple `@media (max-width: ...)` rule that exactly matches a configured Bricks breakpoint, supported declarations can become native controls at that breakpoint. For example, a `.card` padding rule at the site's mobile breakpoint can appear under that breakpoint's padding controls. Declarations without a matching control remain in Custom CSS. Compound or nested media conditions, unmatched widths, and rules whose source order cannot be represented by Bricks breakpoint order stay in Custom CSS rather than being applied at the wrong breakpoint.
 
 ## Example: HTML with a global class
 

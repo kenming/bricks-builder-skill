@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/integrations/gutenberg.md"
 pageType: "article"
 section: "integrations"
 category: "gutenberg"
-lastmod: "2026-09-16T10:41:20.000Z"
+lastmod: "2026-09-30T17:19:56.000Z"
 ---
 If you've created your pages with Gutenberg you can continue editing them with Bricks without having to start all over again. Bricks will convert your Gutenberg blocks into Bricks elements.
 

@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/developer.md"
 pageType: "hub"
 section: "developer"
 category: ""
-lastmod: "2026-09-16T10:41:20.000Z"
+lastmod: "2026-09-30T17:19:56.000Z"
 ---
 The Developer section covers the extension points and data structures behind Bricks so you can build custom elements, hook into builder behavior, register controls, and generate valid Bricks data outside the UI.
 

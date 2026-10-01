@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/developer/schema/settings/page.md
 pageType: "article"
 section: "developer"
 category: "schema"
-lastmod: "2026-09-16T10:41:20.000Z"
+lastmod: "2026-09-30T17:19:56.000Z"
 ---
 import SchemaJson from '../../../../../components/SchemaJson.astro'
 

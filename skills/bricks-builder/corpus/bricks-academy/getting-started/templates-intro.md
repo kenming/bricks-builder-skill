@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/getting-started/templates-intro.m
 pageType: "article"
 section: "getting-started"
 category: "templates-intro"
-lastmod: "2026-09-16T10:41:20.000Z"
+lastmod: "2026-09-30T17:19:56.000Z"
 ---
 https://youtu.be/9v2TUaA-oFg
 

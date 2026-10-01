@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/developer/schema/elements/map.md"
 pageType: "article"
 section: "developer"
 category: "schema"
-lastmod: "2026-09-16T10:41:20.000Z"
+lastmod: "2026-09-30T17:19:56.000Z"
 ---
 import SchemaJson from '../../../../../components/SchemaJson.astro'
 
@@ -36,6 +36,7 @@ import SchemaJson from '../../../../../components/SchemaJson.astro'
 | `mapCenterLat` | text | Latitude | — |
 | `mapCenterLng` | text | Longitude | — |
 | `mapCenterAddress` | text | Address | — |
+| `renderMode` | select | Render mode | — |
 | `localization` | checkbox | Use page locale | — |
 | `height` | number | Height | `height` |
 | `zoom` | number | Zoom level | — |

@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/developer/guides/asset-loading.md
 pageType: "article"
 section: "developer"
 category: "guides"
-lastmod: "2026-09-16T10:41:20.000Z"
+lastmod: "2026-09-30T17:19:56.000Z"
 ---
 "Performance" being one of Bricks' three pillars, Bricks only loads many frontend assets when they are needed on the current page.
 

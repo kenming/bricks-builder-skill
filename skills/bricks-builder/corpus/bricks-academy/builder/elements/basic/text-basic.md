@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/builder/elements/basic/text-basic
 pageType: "article"
 section: "builder"
 category: "elements"
-lastmod: "2026-09-16T10:41:20.000Z"
+lastmod: "2026-09-30T17:19:56.000Z"
 ---
 The Basic Text element displays simple text content with basic formatting options. Use this element for paragraphs, small text blocks, or any content that doesn't require rich text formatting.
 

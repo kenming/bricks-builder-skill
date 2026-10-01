@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/builder/features/media-browser.md
 pageType: "article"
 section: "builder"
 category: "features"
-lastmod: "2026-09-16T10:41:20.000Z"
+lastmod: "2026-09-30T17:19:56.000Z"
 ---
 The **Media Browser**, introduced in Bricks 2.4, adds media selection and management to the [Builder Browser](/builder/features/builder-browser/). It works with attachments in the WordPress Media Library, so files uploaded or edited in either interface remain available in both.
 
@@ -79,6 +79,10 @@ Select **From URL**, then enter one public HTTP or HTTPS file URL per line. Bric
 ### Edit uploaded files
 
 After an upload completes, you can edit its title, alternative text, caption, and description. Changes to an individual attachment save after you leave the edited field. Select several completed uploads to apply metadata changes in bulk.
+
+For a completed upload, choose **View in library** to find the attachment even if the current folder or filters would hide it. **Remove from list** only clears the upload workspace entry; the attachment stays in the Media Library. When a HappyFiles folder assignment cannot be confirmed, use **Retry folder assignment** on that upload instead of uploading the file again.
+
+Completed uploads also offer **Move** when a compatible folder integration is available, plus **Trash** or **Delete permanently** according to the site's Media Trash setting. These actions change the Media Library attachment and require the relevant attachment permissions. A successful Trash or Delete action removes the entry from the upload list.
 
 When Media Health is enabled, images can also be marked **Decorative** during upload. This clears their alternative text and excludes them from the missing-alt check.
 
@@ -162,6 +166,8 @@ When the integration and your permissions allow it, you can:
 - Drag attachments or a selection into a folder.
 - Move selected attachments with the bulk action.
 - Upload files directly into the active folder.
+
+Open a subfolder from the folder sidebar or from the child folders shown above the media results. Attachment file names are available when you hover over an item or focus it with the keyboard.
 
 Deleting a folder does not delete its attachments. Their relationship to that folder is removed. Files without another folder become uncategorized, and child folders move to the deleted folder's parent.
 

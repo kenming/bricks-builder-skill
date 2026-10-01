@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/builder/license/license-and-updat
 pageType: "article"
 section: "builder"
 category: "license"
-lastmod: "2026-09-16T10:41:20.000Z"
+lastmod: "2026-09-30T17:19:56.000Z"
 ---
 For first-time installation and activation, follow [Installation and setup](/getting-started/installation-setup/).
 

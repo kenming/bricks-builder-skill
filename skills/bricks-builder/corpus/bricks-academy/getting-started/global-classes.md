@@ -6,7 +6,7 @@ markdownUrl: "https://academy.bricksbuilder.io/getting-started/global-classes.md
 pageType: "article"
 section: "getting-started"
 category: "global-classes"
-lastmod: "2026-09-16T10:41:20.000Z"
+lastmod: "2026-09-30T17:19:56.000Z"
 ---
 https://youtu.be/M7i2efLTgD0
 

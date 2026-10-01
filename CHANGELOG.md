@@ -2,6 +2,15 @@
 
 ## Unreleased
 
+### Changed
+
+- Refreshed the Academy snapshot for Bricks 2.4.2 while retaining `824`
+  documents, `632` local images, and `51` external embeds. The updated corpus
+  covers Map iframe/API render modes, responsive class-style imports,
+  interaction target copy actions, Media Browser upload management, clipboard
+  and HTTPS requirements for HTML/CSS paste, and the corresponding 2.4.2 schema
+  adjustments for Map, Form, Filter Select, and Theme Styles.
+
 ## v1.1.0 - 2026-09-20
 
 ### Added
