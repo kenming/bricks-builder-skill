@@ -2,6 +2,12 @@
 
 這是一個 local-first Agent Skill，用來查詢、開發、修改與審核 Bricks Builder 網站。
 
+> 📘 **Bricks Builder Skill Handbook**
+>
+> 一本 50 頁的實務手冊，涵蓋 AI 輔助 Bricks 開發、MCP 工作流程、實作 Playbook、驗證與專案交付。
+>
+> **[前往 Agensi 查看手冊 →](https://www.agensi.io/skills/bricks-builder-skill)**
+
 它整合三層證據：
 
 1. 同步自 Bricks Academy 官方文件的本地 corpus；

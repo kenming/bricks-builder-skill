@@ -4,6 +4,7 @@
 
 ### Changed
 
+- Added a concise README callout linking the 50-page Bricks Builder Skill Handbook on Agensi in both English and Traditional Chinese.
 - Refreshed the Academy snapshot for Bricks 2.4.2 while retaining `824`
   documents, `632` local images, and `51` external embeds. The updated corpus
   covers Map iframe/API render modes, responsive class-style imports,

@@ -2,6 +2,12 @@
 
 A local-first Agent Skill for researching, building, editing, and auditing Bricks Builder sites.
 
+> 📘 **Bricks Builder Skill Handbook**
+>
+> A 50-page practical guide to AI-assisted Bricks development, including MCP workflows, implementation playbooks, verification, and project delivery.
+>
+> **[Learn more on Agensi →](https://www.agensi.io/skills/bricks-builder-skill)**
+
 It combines three evidence layers:
 
 1. a synchronized local mirror of the official Bricks Academy documentation;
